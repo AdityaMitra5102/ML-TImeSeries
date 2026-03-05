@@ -1,0 +1,914 @@
+2026-03-05T06:31:39.437983+00:00 sshresetvm useradd[833]: new group: name=vm_user, GID=1000
+2026-03-05T06:31:39.437989+00:00 sshresetvm useradd[833]: new user: name=vm_user, UID=1000, GID=1000, home=/home/vm_user, shell=/bin/bash, from=none
+2026-03-05T06:31:39.437995+00:00 sshresetvm useradd[833]: add 'vm_user' to group 'adm'
+2026-03-05T06:31:39.438001+00:00 sshresetvm useradd[833]: add 'vm_user' to group 'cdrom'
+2026-03-05T06:31:39.438006+00:00 sshresetvm useradd[833]: add 'vm_user' to group 'sudo'
+2026-03-05T06:31:39.438012+00:00 sshresetvm useradd[833]: add 'vm_user' to group 'dip'
+2026-03-05T06:31:39.438018+00:00 sshresetvm useradd[833]: add 'vm_user' to group 'lxd'
+2026-03-05T06:31:39.438024+00:00 sshresetvm useradd[833]: add 'vm_user' to shadow group 'adm'
+2026-03-05T06:31:39.438029+00:00 sshresetvm useradd[833]: add 'vm_user' to shadow group 'cdrom'
+2026-03-05T06:31:39.438035+00:00 sshresetvm useradd[833]: add 'vm_user' to shadow group 'sudo'
+2026-03-05T06:31:39.438041+00:00 sshresetvm useradd[833]: add 'vm_user' to shadow group 'dip'
+2026-03-05T06:31:39.438047+00:00 sshresetvm useradd[833]: add 'vm_user' to shadow group 'lxd'
+2026-03-05T06:31:39.438054+00:00 sshresetvm passwd[847]: password for 'vm_user' changed by 'root'
+2026-03-05T06:31:39.443636+00:00 sshresetvm systemd-logind[888]: New seat seat0.
+2026-03-05T06:31:39.443644+00:00 sshresetvm systemd-logind[888]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+2026-03-05T06:33:11.171688+00:00 sshresetvm sshd[1506]: Server listening on 0.0.0.0 port 22.
+2026-03-05T06:33:11.171909+00:00 sshresetvm sshd[1506]: Server listening on :: port 22.
+2026-03-05T06:33:17.060336+00:00 sshresetvm sshd[1508]: Accepted password for vm_user from 212.125.4.212 port 33433 ssh2
+2026-03-05T06:33:17.061983+00:00 sshresetvm sshd[1508]: pam_unix(sshd:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T06:33:17.107238+00:00 sshresetvm systemd-logind[888]: New session 1 of user vm_user.
+2026-03-05T06:33:17.123690+00:00 sshresetvm (systemd): pam_unix(systemd-user:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T06:33:22.885782+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/apt update
+2026-03-05T06:33:22.886739+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:33:30.361143+00:00 sshresetvm sshd[1938]: banner exchange: Connection from 159.89.123.151 port 55070: invalid format
+2026-03-05T06:33:30.564936+00:00 sshresetvm sshd[1942]: banner exchange: Connection from 159.89.123.151 port 55076: invalid format
+2026-03-05T06:33:35.399210+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:34:10.309971+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/apt upgrade
+2026-03-05T06:34:10.311093+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:35:01.155971+00:00 sshresetvm CRON[9453]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T06:35:01.161995+00:00 sshresetvm CRON[9453]: pam_unix(cron:session): session closed for user root
+2026-03-05T06:35:05.437598+00:00 sshresetvm sshd[1506]: Received signal 15; terminating.
+2026-03-05T06:35:05.519580+00:00 sshresetvm sshd[11784]: Server listening on 0.0.0.0 port 22.
+2026-03-05T06:35:05.519709+00:00 sshresetvm sshd[11784]: Server listening on :: port 22.
+2026-03-05T06:35:05.616903+00:00 sshresetvm polkitd[11769]: Loading rules from directory /etc/polkit-1/rules.d
+2026-03-05T06:35:05.617348+00:00 sshresetvm polkitd[11769]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-03-05T06:35:05.622623+00:00 sshresetvm polkitd[11769]: Finished loading, compiling and executing 6 rules
+2026-03-05T06:35:05.627599+00:00 sshresetvm polkitd[11769]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-03-05T06:35:07.087477+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:35:33.214701+00:00 sshresetvm sshd[11950]: Connection closed by 185.242.226.17 port 56408 [preauth]
+2026-03-05T06:36:58.652732+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/python3
+2026-03-05T06:36:58.653548+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:37:19.361783+00:00 sshresetvm useradd[11959]: new group: name=test, GID=1001
+2026-03-05T06:37:19.362125+00:00 sshresetvm useradd[11959]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/sh, from=/dev/pts/1
+2026-03-05T06:37:28.146877+00:00 sshresetvm sshd[11966]: Connection closed by 143.244.190.213 port 54312
+2026-03-05T06:37:35.791712+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:37:43.325586+00:00 sshresetvm su: pam_unix(su:auth): authentication failure; logname=vm_user uid=1000 euid=0 tty=/dev/pts/0 ruser=vm_user rhost=  user=test
+2026-03-05T06:37:45.078156+00:00 sshresetvm su[11968]: FAILED SU (to test) vm_user on pts/0
+2026-03-05T06:37:47.502510+00:00 sshresetvm sshd[11969]: Connection closed by 165.232.112.134 port 33952
+2026-03-05T06:37:54.942757+00:00 sshresetvm su: pam_unix(su:auth): authentication failure; logname=vm_user uid=1000 euid=0 tty=/dev/pts/0 ruser=vm_user rhost=  user=test
+2026-03-05T06:37:56.654603+00:00 sshresetvm su[11970]: FAILED SU (to test) vm_user on pts/0
+2026-03-05T06:38:02.066071+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T06:38:02.066883+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:38:02.070481+00:00 sshresetvm su[11973]: (to root) root on pts/1
+2026-03-05T06:38:02.070887+00:00 sshresetvm su[11973]: pam_unix(su:session): session opened for user root(uid=0) by vm_user(uid=0)
+2026-03-05T06:38:04.813999+00:00 sshresetvm su[11981]: (to test) root on pts/1
+2026-03-05T06:38:04.814741+00:00 sshresetvm su[11981]: pam_unix(su:session): session opened for user test(uid=1001) by vm_user(uid=0)
+2026-03-05T06:38:15.345022+00:00 sshresetvm su[11981]: pam_unix(su:session): session closed for user test
+2026-03-05T06:38:17.212412+00:00 sshresetvm su[11973]: pam_unix(su:session): session closed for user root
+2026-03-05T06:38:17.213403+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:38:20.078338+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/deluser
+2026-03-05T06:38:20.078917+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:38:22.218241+00:00 sshresetvm userdel[11990]: delete user 'test'
+2026-03-05T06:38:22.219026+00:00 sshresetvm userdel[11990]: removed group 'test' owned by 'test'
+2026-03-05T06:38:22.219113+00:00 sshresetvm userdel[11990]: removed shadow group 'test' owned by 'test'
+2026-03-05T06:38:22.285226+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:38:30.346531+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/adduser -d test
+2026-03-05T06:38:30.347292+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:38:30.429542+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:39:56.818891+00:00 sshresetvm sshd[12001]: Invalid user sol from 143.244.190.213 port 37694
+2026-03-05T06:39:56.979320+00:00 sshresetvm sshd[12001]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:39:56.979449+00:00 sshresetvm sshd[12001]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=143.244.190.213 
+2026-03-05T06:39:59.128588+00:00 sshresetvm sshd[12001]: Failed password for invalid user sol from 143.244.190.213 port 37694 ssh2
+2026-03-05T06:40:00.761700+00:00 sshresetvm sshd[12001]: Connection closed by invalid user sol 143.244.190.213 port 37694 [preauth]
+2026-03-05T06:41:23.120597+00:00 sshresetvm sshd[12035]: Invalid user solana from 165.232.112.134 port 59230
+2026-03-05T06:41:23.127634+00:00 sshresetvm sshd[12035]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:41:23.127751+00:00 sshresetvm sshd[12035]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=165.232.112.134 
+2026-03-05T06:41:25.221540+00:00 sshresetvm sshd[12035]: Failed password for invalid user solana from 165.232.112.134 port 59230 ssh2
+2026-03-05T06:41:26.785782+00:00 sshresetvm sshd[12035]: Connection closed by invalid user solana 165.232.112.134 port 59230 [preauth]
+2026-03-05T06:42:20.110426+00:00 sshresetvm sshd[12037]: Invalid user solana from 143.244.190.213 port 42770
+2026-03-05T06:42:20.265099+00:00 sshresetvm sshd[12037]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:42:20.265258+00:00 sshresetvm sshd[12037]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=143.244.190.213 
+2026-03-05T06:42:22.183533+00:00 sshresetvm sshd[12037]: Failed password for invalid user solana from 143.244.190.213 port 42770 ssh2
+2026-03-05T06:42:24.070109+00:00 sshresetvm sshd[12037]: Connection closed by invalid user solana 143.244.190.213 port 42770 [preauth]
+2026-03-05T06:44:34.208610+00:00 sshresetvm sshd[12049]: Invalid user sol from 143.244.190.213 port 60970
+2026-03-05T06:44:34.368585+00:00 sshresetvm sshd[12049]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:44:34.368725+00:00 sshresetvm sshd[12049]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=143.244.190.213 
+2026-03-05T06:44:36.347464+00:00 sshresetvm sshd[12049]: Failed password for invalid user sol from 143.244.190.213 port 60970 ssh2
+2026-03-05T06:44:38.150524+00:00 sshresetvm sshd[12049]: Connection closed by invalid user sol 143.244.190.213 port 60970 [preauth]
+2026-03-05T06:45:00.374410+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/nano /etc/adduser.conf
+2026-03-05T06:45:00.379166+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:45:01.229866+00:00 sshresetvm CRON[12063]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T06:45:01.232295+00:00 sshresetvm CRON[12063]: pam_unix(cron:session): session closed for user root
+2026-03-05T06:45:06.279379+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:45:16.223730+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/adduser test
+2026-03-05T06:45:16.228553+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:45:16.295146+00:00 sshresetvm groupadd[12079]: group added to /etc/group: name=test, GID=1001
+2026-03-05T06:45:16.305489+00:00 sshresetvm groupadd[12079]: group added to /etc/gshadow: name=test
+2026-03-05T06:45:16.306914+00:00 sshresetvm groupadd[12079]: new group: name=test, GID=1001
+2026-03-05T06:45:16.341014+00:00 sshresetvm useradd[12086]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=/dev/pts/1
+2026-03-05T06:45:33.016104+00:00 sshresetvm chfn[12100]: changed user 'test' information
+2026-03-05T06:45:33.420911+00:00 sshresetvm gpasswd[12108]: members of group users set by root to test
+2026-03-05T06:45:33.423948+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:45:36.478171+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T06:45:36.479012+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:45:36.482436+00:00 sshresetvm su[12116]: (to root) root on pts/1
+2026-03-05T06:45:36.482851+00:00 sshresetvm su[12116]: pam_unix(su:session): session opened for user root(uid=0) by vm_user(uid=0)
+2026-03-05T06:45:38.008765+00:00 sshresetvm su[12124]: (to test) root on pts/1
+2026-03-05T06:45:38.009604+00:00 sshresetvm su[12124]: pam_unix(su:session): session opened for user test(uid=1001) by vm_user(uid=0)
+2026-03-05T06:45:40.643784+00:00 sshresetvm su[12124]: pam_unix(su:session): session closed for user test
+2026-03-05T06:45:43.756892+00:00 sshresetvm userdel[12136]: delete user 'test'
+2026-03-05T06:45:43.757011+00:00 sshresetvm userdel[12136]: delete 'test' from group 'users'
+2026-03-05T06:45:43.757694+00:00 sshresetvm userdel[12136]: removed group 'test' owned by 'test'
+2026-03-05T06:45:43.757808+00:00 sshresetvm userdel[12136]: removed shadow group 'test' owned by 'test'
+2026-03-05T06:45:43.757863+00:00 sshresetvm userdel[12136]: delete 'test' from shadow group 'users'
+2026-03-05T06:45:48.304048+00:00 sshresetvm su[12116]: pam_unix(su:session): session closed for user root
+2026-03-05T06:45:48.305263+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:45:55.027963+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/useradd test
+2026-03-05T06:45:55.028744+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:45:55.062846+00:00 sshresetvm useradd[12146]: new group: name=test, GID=1001
+2026-03-05T06:45:55.062989+00:00 sshresetvm useradd[12146]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/sh, from=/dev/pts/1
+2026-03-05T06:45:55.127178+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:46:13.496758+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/usermod -s /bin/bash test
+2026-03-05T06:46:13.497550+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:46:13.581509+00:00 sshresetvm usermod[12156]: change user 'test' shell from '/bin/sh' to '/bin/bash'
+2026-03-05T06:46:13.596813+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:46:17.900343+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T06:46:17.901229+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:46:17.904881+00:00 sshresetvm su[12166]: (to root) root on pts/1
+2026-03-05T06:46:17.905259+00:00 sshresetvm su[12166]: pam_unix(su:session): session opened for user root(uid=0) by vm_user(uid=0)
+2026-03-05T06:46:20.022144+00:00 sshresetvm su[12174]: (to test) root on pts/1
+2026-03-05T06:46:20.022932+00:00 sshresetvm su[12174]: pam_unix(su:session): session opened for user test(uid=1001) by vm_user(uid=0)
+2026-03-05T06:46:22.622830+00:00 sshresetvm su[12174]: pam_unix(su:session): session closed for user test
+2026-03-05T06:46:25.654419+00:00 sshresetvm su[12166]: pam_unix(su:session): session closed for user root
+2026-03-05T06:46:25.655535+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:46:29.318378+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/deluser
+2026-03-05T06:46:29.319174+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:46:30.412524+00:00 sshresetvm userdel[12188]: delete user 'test'
+2026-03-05T06:46:30.414215+00:00 sshresetvm userdel[12188]: removed group 'test' owned by 'test'
+2026-03-05T06:46:30.414280+00:00 sshresetvm userdel[12188]: removed shadow group 'test' owned by 'test'
+2026-03-05T06:46:30.484286+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:46:48.047230+00:00 sshresetvm sshd[12200]: Invalid user sol from 143.244.190.213 port 45356
+2026-03-05T06:46:48.202413+00:00 sshresetvm sshd[12200]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:46:48.202510+00:00 sshresetvm sshd[12200]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=143.244.190.213 
+2026-03-05T06:46:50.577690+00:00 sshresetvm sshd[12200]: Failed password for invalid user sol from 143.244.190.213 port 45356 ssh2
+2026-03-05T06:46:51.979346+00:00 sshresetvm sshd[12200]: Connection closed by invalid user sol 143.244.190.213 port 45356 [preauth]
+2026-03-05T06:47:40.396622+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/apt install apache2
+2026-03-05T06:47:40.397459+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T06:47:43.524099+00:00 sshresetvm groupadd[12363]: group added to /etc/group: name=ssl-cert, GID=114
+2026-03-05T06:47:43.533328+00:00 sshresetvm groupadd[12363]: group added to /etc/gshadow: name=ssl-cert
+2026-03-05T06:47:43.534638+00:00 sshresetvm groupadd[12363]: new group: name=ssl-cert, GID=114
+2026-03-05T06:47:51.845519+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T06:48:55.382671+00:00 sshresetvm sshd[13103]: Invalid user solv from 143.244.190.213 port 46112
+2026-03-05T06:48:55.534576+00:00 sshresetvm sshd[13103]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:48:55.534682+00:00 sshresetvm sshd[13103]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=143.244.190.213 
+2026-03-05T06:48:57.011549+00:00 sshresetvm sshd[13103]: Failed password for invalid user solv from 143.244.190.213 port 46112 ssh2
+2026-03-05T06:48:57.342337+00:00 sshresetvm sshd[13103]: Connection closed by invalid user solv 143.244.190.213 port 46112 [preauth]
+2026-03-05T06:50:56.614859+00:00 sshresetvm sshd[13113]: Invalid user solv from 143.244.190.213 port 36126
+2026-03-05T06:50:56.769776+00:00 sshresetvm sshd[13113]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:50:56.769886+00:00 sshresetvm sshd[13113]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=143.244.190.213 
+2026-03-05T06:50:58.858760+00:00 sshresetvm sshd[13113]: Failed password for invalid user solv from 143.244.190.213 port 36126 ssh2
+2026-03-05T06:51:00.238177+00:00 sshresetvm sshd[13113]: Connection closed by invalid user solv 143.244.190.213 port 36126 [preauth]
+2026-03-05T06:53:13.677001+00:00 sshresetvm sshd[13118]: Connection closed by 165.22.106.85 port 36654
+2026-03-05T06:55:01.237759+00:00 sshresetvm CRON[13119]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T06:55:01.240705+00:00 sshresetvm CRON[13119]: pam_unix(cron:session): session closed for user root
+2026-03-05T06:57:11.831924+00:00 sshresetvm sshd[13128]: Invalid user cisco from 165.22.106.85 port 60866
+2026-03-05T06:57:11.981281+00:00 sshresetvm sshd[13128]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:57:11.981395+00:00 sshresetvm sshd[13128]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=165.22.106.85 
+2026-03-05T06:57:13.553028+00:00 sshresetvm sshd[13128]: Failed password for invalid user cisco from 165.22.106.85 port 60866 ssh2
+2026-03-05T06:57:13.703850+00:00 sshresetvm sshd[13128]: Connection closed by invalid user cisco 165.22.106.85 port 60866 [preauth]
+2026-03-05T06:59:50.792766+00:00 sshresetvm sshd[13130]: Invalid user cisco from 165.22.106.85 port 45792
+2026-03-05T06:59:50.952577+00:00 sshresetvm sshd[13130]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T06:59:50.952660+00:00 sshresetvm sshd[13130]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=165.22.106.85 
+2026-03-05T06:59:53.352326+00:00 sshresetvm sshd[13130]: Failed password for invalid user cisco from 165.22.106.85 port 45792 ssh2
+2026-03-05T06:59:54.258994+00:00 sshresetvm sshd[13130]: Connection closed by invalid user cisco 165.22.106.85 port 45792 [preauth]
+2026-03-05T07:02:22.783097+00:00 sshresetvm sshd[13140]: Invalid user admin from 165.22.106.85 port 37342
+2026-03-05T07:02:22.932753+00:00 sshresetvm sshd[13140]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:02:22.932893+00:00 sshresetvm sshd[13140]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=165.22.106.85 
+2026-03-05T07:02:23.067055+00:00 sshresetvm sshd[13142]: Connection closed by 178.128.165.87 port 34802
+2026-03-05T07:02:24.865891+00:00 sshresetvm sshd[13140]: Failed password for invalid user admin from 165.22.106.85 port 37342 ssh2
+2026-03-05T07:02:26.292612+00:00 sshresetvm sshd[13140]: Connection closed by invalid user admin 165.22.106.85 port 37342 [preauth]
+2026-03-05T07:04:45.278187+00:00 sshresetvm sshd[13143]: Invalid user validator from 178.128.165.87 port 36834
+2026-03-05T07:04:45.300041+00:00 sshresetvm sshd[13143]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:04:45.300166+00:00 sshresetvm sshd[13143]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:04:47.197975+00:00 sshresetvm sshd[13143]: Failed password for invalid user validator from 178.128.165.87 port 36834 ssh2
+2026-03-05T07:04:47.919432+00:00 sshresetvm sshd[13143]: Connection closed by invalid user validator 178.128.165.87 port 36834 [preauth]
+2026-03-05T07:05:01.245526+00:00 sshresetvm CRON[13145]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:05:01.247886+00:00 sshresetvm CRON[13145]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:06:55.875647+00:00 sshresetvm sshd[13153]: Invalid user node from 178.128.165.87 port 48240
+2026-03-05T07:06:55.898477+00:00 sshresetvm sshd[13153]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:06:55.898563+00:00 sshresetvm sshd[13153]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:06:57.309647+00:00 sshresetvm sshd[13153]: Failed password for invalid user node from 178.128.165.87 port 48240 ssh2
+2026-03-05T07:06:58.134764+00:00 sshresetvm sshd[13153]: Connection closed by invalid user node 178.128.165.87 port 48240 [preauth]
+2026-03-05T07:08:56.140420+00:00 sshresetvm sshd[13156]: Invalid user operator from 178.128.165.87 port 56058
+2026-03-05T07:08:56.162588+00:00 sshresetvm sshd[13156]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:08:56.162671+00:00 sshresetvm sshd[13156]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:08:57.849967+00:00 sshresetvm sshd[13156]: Failed password for invalid user operator from 178.128.165.87 port 56058 ssh2
+2026-03-05T07:08:58.268200+00:00 sshresetvm sshd[13156]: Connection closed by invalid user operator 178.128.165.87 port 56058 [preauth]
+2026-03-05T07:10:53.775247+00:00 sshresetvm sshd[13166]: Invalid user validator from 178.128.165.87 port 42610
+2026-03-05T07:10:53.798273+00:00 sshresetvm sshd[13166]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:10:53.798437+00:00 sshresetvm sshd[13166]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:10:55.881938+00:00 sshresetvm sshd[13166]: Failed password for invalid user validator from 178.128.165.87 port 42610 ssh2
+2026-03-05T07:10:56.418891+00:00 sshresetvm sshd[13166]: Connection closed by invalid user validator 178.128.165.87 port 42610 [preauth]
+2026-03-05T07:11:45.432659+00:00 sshresetvm sshd[1508]: pam_unix(sshd:session): session closed for user vm_user
+2026-03-05T07:11:45.437111+00:00 sshresetvm systemd-logind[888]: Session 1 logged out. Waiting for processes to exit.
+2026-03-05T07:11:45.437873+00:00 sshresetvm systemd-logind[888]: Removed session 1.
+2026-03-05T07:11:55.500702+00:00 sshresetvm (sd-pam): pam_unix(systemd-user:session): session closed for user vm_user
+2026-03-05T07:12:49.900082+00:00 sshresetvm sshd[13177]: Invalid user validator from 178.128.165.87 port 47456
+2026-03-05T07:12:49.922864+00:00 sshresetvm sshd[13177]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:12:49.922956+00:00 sshresetvm sshd[13177]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:12:51.931270+00:00 sshresetvm sshd[13177]: Failed password for invalid user validator from 178.128.165.87 port 47456 ssh2
+2026-03-05T07:12:52.543033+00:00 sshresetvm sshd[13177]: Connection closed by invalid user validator 178.128.165.87 port 47456 [preauth]
+2026-03-05T07:14:40.910295+00:00 sshresetvm sshd[13181]: Invalid user node from 178.128.165.87 port 45480
+2026-03-05T07:14:40.932866+00:00 sshresetvm sshd[13181]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:14:40.932939+00:00 sshresetvm sshd[13181]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:14:42.845908+00:00 sshresetvm sshd[13181]: Failed password for invalid user node from 178.128.165.87 port 45480 ssh2
+2026-03-05T07:14:43.169261+00:00 sshresetvm sshd[13181]: Connection closed by invalid user node 178.128.165.87 port 45480 [preauth]
+2026-03-05T07:15:01.252461+00:00 sshresetvm CRON[13183]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:15:01.254830+00:00 sshresetvm CRON[13183]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:15:59.172731+00:00 sshresetvm sshd[13191]: Connection closed by 188.166.54.43 port 36434
+2026-03-05T07:16:29.517515+00:00 sshresetvm sshd[13192]: Invalid user validator from 178.128.165.87 port 60302
+2026-03-05T07:16:29.537252+00:00 sshresetvm sshd[13192]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:16:29.537400+00:00 sshresetvm sshd[13192]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:16:32.082426+00:00 sshresetvm sshd[13192]: Failed password for invalid user validator from 178.128.165.87 port 60302 ssh2
+2026-03-05T07:16:32.154622+00:00 sshresetvm sshd[13192]: Connection closed by invalid user validator 178.128.165.87 port 60302 [preauth]
+2026-03-05T07:17:01.258559+00:00 sshresetvm CRON[13194]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:17:01.261245+00:00 sshresetvm CRON[13194]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:18:13.634966+00:00 sshresetvm sshd[13197]: Invalid user ubuntu from 188.166.54.43 port 48626
+2026-03-05T07:18:13.654863+00:00 sshresetvm sshd[13197]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:18:13.655005+00:00 sshresetvm sshd[13197]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=188.166.54.43 
+2026-03-05T07:18:15.808859+00:00 sshresetvm sshd[13197]: Failed password for invalid user ubuntu from 188.166.54.43 port 48626 ssh2
+2026-03-05T07:18:17.424589+00:00 sshresetvm sshd[13197]: Connection closed by invalid user ubuntu 188.166.54.43 port 48626 [preauth]
+2026-03-05T07:18:25.102775+00:00 sshresetvm sshd[13199]: Invalid user node from 178.128.165.87 port 38622
+2026-03-05T07:18:25.124842+00:00 sshresetvm sshd[13199]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:18:25.124955+00:00 sshresetvm sshd[13199]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:18:27.258889+00:00 sshresetvm sshd[13199]: Failed password for invalid user node from 178.128.165.87 port 38622 ssh2
+2026-03-05T07:18:27.360531+00:00 sshresetvm sshd[13199]: Connection closed by invalid user node 178.128.165.87 port 38622 [preauth]
+2026-03-05T07:20:23.950293+00:00 sshresetvm sshd[13210]: Invalid user massa from 178.128.165.87 port 42490
+2026-03-05T07:20:23.972774+00:00 sshresetvm sshd[13210]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:20:23.972848+00:00 sshresetvm sshd[13210]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:20:25.639989+00:00 sshresetvm sshd[13210]: Failed password for invalid user massa from 178.128.165.87 port 42490 ssh2
+2026-03-05T07:20:25.991783+00:00 sshresetvm sshd[13210]: Connection closed by invalid user massa 178.128.165.87 port 42490 [preauth]
+2026-03-05T07:20:28.037409+00:00 sshresetvm sshd[13212]: Invalid user admin from 217.154.69.208 port 43558
+2026-03-05T07:20:28.039580+00:00 sshresetvm sshd[13212]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:20:28.039649+00:00 sshresetvm sshd[13212]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:20:30.058322+00:00 sshresetvm sshd[13212]: Failed password for invalid user admin from 217.154.69.208 port 43558 ssh2
+2026-03-05T07:20:31.605601+00:00 sshresetvm sshd[13212]: Connection closed by invalid user admin 217.154.69.208 port 43558 [preauth]
+2026-03-05T07:21:08.349268+00:00 sshresetvm sshd[13215]: Invalid user orangepi from 217.154.69.208 port 42082
+2026-03-05T07:21:08.351492+00:00 sshresetvm sshd[13215]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:21:08.351599+00:00 sshresetvm sshd[13215]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:21:09.863129+00:00 sshresetvm sshd[13215]: Failed password for invalid user orangepi from 217.154.69.208 port 42082 ssh2
+2026-03-05T07:21:10.449920+00:00 sshresetvm sshd[13215]: Connection closed by invalid user orangepi 217.154.69.208 port 42082 [preauth]
+2026-03-05T07:21:44.452771+00:00 sshresetvm sshd[13217]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:21:45.903807+00:00 sshresetvm sshd[13217]: Failed password for root from 217.154.69.208 port 43332 ssh2
+2026-03-05T07:21:46.302631+00:00 sshresetvm sshd[13217]: Connection closed by authenticating user root 217.154.69.208 port 43332 [preauth]
+2026-03-05T07:22:18.406895+00:00 sshresetvm sshd[13219]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:22:20.194422+00:00 sshresetvm sshd[13219]: Failed password for root from 217.154.69.208 port 57150 ssh2
+2026-03-05T07:22:21.783849+00:00 sshresetvm sshd[13219]: Connection closed by authenticating user root 217.154.69.208 port 57150 [preauth]
+2026-03-05T07:22:21.925062+00:00 sshresetvm sshd[13221]: Invalid user node from 178.128.165.87 port 34694
+2026-03-05T07:22:21.944862+00:00 sshresetvm sshd[13221]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:22:21.944987+00:00 sshresetvm sshd[13221]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:22:23.812631+00:00 sshresetvm sshd[13221]: Failed password for invalid user node from 178.128.165.87 port 34694 ssh2
+2026-03-05T07:22:24.178200+00:00 sshresetvm sshd[13221]: Connection closed by invalid user node 178.128.165.87 port 34694 [preauth]
+2026-03-05T07:22:54.152722+00:00 sshresetvm sshd[13223]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:22:56.216140+00:00 sshresetvm sshd[13223]: Failed password for root from 217.154.69.208 port 42104 ssh2
+2026-03-05T07:22:57.602113+00:00 sshresetvm sshd[13223]: Connection closed by authenticating user root 217.154.69.208 port 42104 [preauth]
+2026-03-05T07:23:33.063558+00:00 sshresetvm sshd[13225]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:23:35.147037+00:00 sshresetvm sshd[13225]: Failed password for root from 217.154.69.208 port 34168 ssh2
+2026-03-05T07:23:36.546243+00:00 sshresetvm sshd[13225]: Connection closed by authenticating user root 217.154.69.208 port 34168 [preauth]
+2026-03-05T07:24:10.723869+00:00 sshresetvm sshd[13227]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:24:12.887640+00:00 sshresetvm sshd[13227]: Failed password for root from 217.154.69.208 port 57572 ssh2
+2026-03-05T07:24:14.111282+00:00 sshresetvm sshd[13227]: Connection closed by authenticating user root 217.154.69.208 port 57572 [preauth]
+2026-03-05T07:24:24.651305+00:00 sshresetvm sshd[13229]: Invalid user nodeoperator from 178.128.165.87 port 51092
+2026-03-05T07:24:24.673830+00:00 sshresetvm sshd[13229]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:24:24.673960+00:00 sshresetvm sshd[13229]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:24:27.093677+00:00 sshresetvm sshd[13229]: Failed password for invalid user nodeoperator from 178.128.165.87 port 51092 ssh2
+2026-03-05T07:24:27.451070+00:00 sshresetvm sshd[13229]: Connection closed by invalid user nodeoperator 178.128.165.87 port 51092 [preauth]
+2026-03-05T07:24:49.195586+00:00 sshresetvm sshd[13231]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:24:51.379523+00:00 sshresetvm sshd[13231]: Failed password for root from 217.154.69.208 port 34426 ssh2
+2026-03-05T07:24:52.692025+00:00 sshresetvm sshd[13231]: Connection closed by authenticating user root 217.154.69.208 port 34426 [preauth]
+2026-03-05T07:25:01.265766+00:00 sshresetvm CRON[13233]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:25:01.268099+00:00 sshresetvm CRON[13233]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:25:25.094839+00:00 sshresetvm sshd[13242]: Invalid user test from 217.154.69.208 port 56404
+2026-03-05T07:25:25.098999+00:00 sshresetvm sshd[13242]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:25:25.099068+00:00 sshresetvm sshd[13242]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:25:26.889757+00:00 sshresetvm sshd[13242]: Failed password for invalid user test from 217.154.69.208 port 56404 ssh2
+2026-03-05T07:25:27.280394+00:00 sshresetvm sshd[13242]: Connection closed by invalid user test 217.154.69.208 port 56404 [preauth]
+2026-03-05T07:25:59.881444+00:00 sshresetvm sshd[13244]: Invalid user user from 217.154.69.208 port 43632
+2026-03-05T07:25:59.883625+00:00 sshresetvm sshd[13244]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:25:59.883737+00:00 sshresetvm sshd[13244]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:26:02.343806+00:00 sshresetvm sshd[13244]: Failed password for invalid user user from 217.154.69.208 port 43632 ssh2
+2026-03-05T07:26:04.887670+00:00 sshresetvm sshd[13244]: Connection closed by invalid user user 217.154.69.208 port 43632 [preauth]
+2026-03-05T07:26:25.975872+00:00 sshresetvm sshd[13246]: Invalid user daoperator from 178.128.165.87 port 36858
+2026-03-05T07:26:25.998569+00:00 sshresetvm sshd[13246]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:26:25.998689+00:00 sshresetvm sshd[13246]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:26:27.695810+00:00 sshresetvm sshd[13246]: Failed password for invalid user daoperator from 178.128.165.87 port 36858 ssh2
+2026-03-05T07:26:27.854321+00:00 sshresetvm sshd[13246]: Connection closed by invalid user daoperator 178.128.165.87 port 36858 [preauth]
+2026-03-05T07:26:38.174080+00:00 sshresetvm sshd[13248]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:26:39.655402+00:00 sshresetvm sshd[13248]: Failed password for root from 217.154.69.208 port 54738 ssh2
+2026-03-05T07:26:39.865840+00:00 sshresetvm sshd[13248]: Connection closed by authenticating user root 217.154.69.208 port 54738 [preauth]
+2026-03-05T07:26:51.569017+00:00 sshresetvm sshd[13250]: Connection closed by 188.166.49.241 port 59316
+2026-03-05T07:27:12.370015+00:00 sshresetvm sshd[13251]: Invalid user admin from 217.154.69.208 port 37600
+2026-03-05T07:27:12.372191+00:00 sshresetvm sshd[13251]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:27:12.372268+00:00 sshresetvm sshd[13251]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:27:14.521155+00:00 sshresetvm sshd[13251]: Failed password for invalid user admin from 217.154.69.208 port 37600 ssh2
+2026-03-05T07:27:15.835641+00:00 sshresetvm sshd[13251]: Connection closed by invalid user admin 217.154.69.208 port 37600 [preauth]
+2026-03-05T07:27:50.162326+00:00 sshresetvm sshd[13254]: Invalid user cirros from 217.154.69.208 port 52224
+2026-03-05T07:27:50.164518+00:00 sshresetvm sshd[13254]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:27:50.164624+00:00 sshresetvm sshd[13254]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:27:52.197903+00:00 sshresetvm sshd[13254]: Failed password for invalid user cirros from 217.154.69.208 port 52224 ssh2
+2026-03-05T07:27:52.743457+00:00 sshresetvm sshd[13254]: Connection closed by invalid user cirros 217.154.69.208 port 52224 [preauth]
+2026-03-05T07:28:14.699859+00:00 sshresetvm sshd[13256]: Invalid user aleo from 178.128.165.87 port 40394
+2026-03-05T07:28:14.719537+00:00 sshresetvm sshd[13256]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:28:14.719642+00:00 sshresetvm sshd[13256]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:28:16.713037+00:00 sshresetvm sshd[13256]: Failed password for invalid user aleo from 178.128.165.87 port 40394 ssh2
+2026-03-05T07:28:16.877583+00:00 sshresetvm sshd[13256]: Connection closed by invalid user aleo 178.128.165.87 port 40394 [preauth]
+2026-03-05T07:28:28.060413+00:00 sshresetvm sshd[13258]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:28:30.309478+00:00 sshresetvm sshd[13258]: Failed password for root from 217.154.69.208 port 53256 ssh2
+2026-03-05T07:28:31.675954+00:00 sshresetvm sshd[13258]: Connection closed by authenticating user root 217.154.69.208 port 53256 [preauth]
+2026-03-05T07:29:04.899542+00:00 sshresetvm sshd[13260]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:29:06.757199+00:00 sshresetvm sshd[13260]: Failed password for root from 217.154.69.208 port 43562 ssh2
+2026-03-05T07:29:08.366568+00:00 sshresetvm sshd[13260]: Connection closed by authenticating user root 217.154.69.208 port 43562 [preauth]
+2026-03-05T07:29:41.539861+00:00 sshresetvm sshd[13262]: Invalid user admin from 217.154.69.208 port 45472
+2026-03-05T07:29:41.542055+00:00 sshresetvm sshd[13262]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:29:41.542163+00:00 sshresetvm sshd[13262]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:29:44.147521+00:00 sshresetvm sshd[13262]: Failed password for invalid user admin from 217.154.69.208 port 45472 ssh2
+2026-03-05T07:29:44.913818+00:00 sshresetvm sshd[13262]: Connection closed by invalid user admin 217.154.69.208 port 45472 [preauth]
+2026-03-05T07:30:03.853157+00:00 sshresetvm sshd[13264]: Invalid user sol from 188.166.49.241 port 48524
+2026-03-05T07:30:03.873846+00:00 sshresetvm sshd[13264]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:30:03.873953+00:00 sshresetvm sshd[13264]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=188.166.49.241 
+2026-03-05T07:30:05.831972+00:00 sshresetvm sshd[13264]: Failed password for invalid user sol from 188.166.49.241 port 48524 ssh2
+2026-03-05T07:30:06.888372+00:00 sshresetvm sshd[13270]: Invalid user hubble from 178.128.165.87 port 45556
+2026-03-05T07:30:06.911034+00:00 sshresetvm sshd[13270]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:30:06.911159+00:00 sshresetvm sshd[13270]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:30:07.516233+00:00 sshresetvm sshd[13264]: Connection closed by invalid user sol 188.166.49.241 port 48524 [preauth]
+2026-03-05T07:30:09.280775+00:00 sshresetvm sshd[13270]: Failed password for invalid user hubble from 178.128.165.87 port 45556 ssh2
+2026-03-05T07:30:11.386910+00:00 sshresetvm sshd[13270]: Connection closed by invalid user hubble 178.128.165.87 port 45556 [preauth]
+2026-03-05T07:30:18.239637+00:00 sshresetvm sshd[13276]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:30:20.589099+00:00 sshresetvm sshd[13276]: Failed password for root from 217.154.69.208 port 44608 ssh2
+2026-03-05T07:30:21.602294+00:00 sshresetvm sshd[13276]: Connection closed by authenticating user root 217.154.69.208 port 44608 [preauth]
+2026-03-05T07:30:56.154399+00:00 sshresetvm sshd[13279]: Invalid user rpc from 217.154.69.208 port 37814
+2026-03-05T07:30:56.158693+00:00 sshresetvm sshd[13279]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:30:56.158756+00:00 sshresetvm sshd[13279]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:30:58.054863+00:00 sshresetvm sshd[13279]: Failed password for invalid user rpc from 217.154.69.208 port 37814 ssh2
+2026-03-05T07:30:58.408317+00:00 sshresetvm sshd[13279]: Connection closed by invalid user rpc 217.154.69.208 port 37814 [preauth]
+2026-03-05T07:31:33.777576+00:00 sshresetvm sshd[13281]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:31:36.091690+00:00 sshresetvm sshd[13281]: Failed password for root from 217.154.69.208 port 58358 ssh2
+2026-03-05T07:31:37.346055+00:00 sshresetvm sshd[13281]: Connection closed by authenticating user root 217.154.69.208 port 58358 [preauth]
+2026-03-05T07:32:05.520656+00:00 sshresetvm sshd[13283]: Invalid user namada from 178.128.165.87 port 39522
+2026-03-05T07:32:05.540445+00:00 sshresetvm sshd[13283]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:32:05.540550+00:00 sshresetvm sshd[13283]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:32:07.247605+00:00 sshresetvm sshd[13283]: Failed password for invalid user namada from 178.128.165.87 port 39522 ssh2
+2026-03-05T07:32:07.456004+00:00 sshresetvm sshd[13283]: Connection closed by invalid user namada 178.128.165.87 port 39522 [preauth]
+2026-03-05T07:32:10.710889+00:00 sshresetvm sshd[13285]: Invalid user sol from 188.166.49.241 port 41310
+2026-03-05T07:32:10.730978+00:00 sshresetvm sshd[13285]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:32:10.731083+00:00 sshresetvm sshd[13285]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=188.166.49.241 
+2026-03-05T07:32:12.789656+00:00 sshresetvm sshd[13285]: Failed password for invalid user sol from 188.166.49.241 port 41310 ssh2
+2026-03-05T07:32:13.976507+00:00 sshresetvm sshd[13287]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:32:14.373224+00:00 sshresetvm sshd[13285]: Connection closed by invalid user sol 188.166.49.241 port 41310 [preauth]
+2026-03-05T07:32:16.446519+00:00 sshresetvm sshd[13287]: Failed password for root from 217.154.69.208 port 52740 ssh2
+2026-03-05T07:32:17.464381+00:00 sshresetvm sshd[13287]: Connection closed by authenticating user root 217.154.69.208 port 52740 [preauth]
+2026-03-05T07:32:52.995720+00:00 sshresetvm sshd[13289]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:32:54.487047+00:00 sshresetvm sshd[13289]: Failed password for root from 217.154.69.208 port 43046 ssh2
+2026-03-05T07:32:54.765636+00:00 sshresetvm sshd[13289]: Connection closed by authenticating user root 217.154.69.208 port 43046 [preauth]
+2026-03-05T07:33:28.046545+00:00 sshresetvm sshd[13291]: Invalid user user1 from 217.154.69.208 port 45150
+2026-03-05T07:33:28.048739+00:00 sshresetvm sshd[13291]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:33:28.048833+00:00 sshresetvm sshd[13291]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:33:29.480439+00:00 sshresetvm sshd[13291]: Failed password for invalid user user1 from 217.154.69.208 port 45150 ssh2
+2026-03-05T07:33:30.370514+00:00 sshresetvm sshd[13291]: Connection closed by invalid user user1 217.154.69.208 port 45150 [preauth]
+2026-03-05T07:34:00.744536+00:00 sshresetvm sshd[13294]: Invalid user pion from 178.128.165.87 port 43924
+2026-03-05T07:34:00.766642+00:00 sshresetvm sshd[13294]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:34:00.766758+00:00 sshresetvm sshd[13294]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:34:02.925783+00:00 sshresetvm sshd[13294]: Failed password for invalid user pion from 178.128.165.87 port 43924 ssh2
+2026-03-05T07:34:03.044696+00:00 sshresetvm sshd[13294]: Connection closed by invalid user pion 178.128.165.87 port 43924 [preauth]
+2026-03-05T07:34:03.643110+00:00 sshresetvm sshd[13296]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:34:04.878895+00:00 sshresetvm sshd[13296]: Failed password for root from 217.154.69.208 port 40082 ssh2
+2026-03-05T07:34:05.375584+00:00 sshresetvm sshd[13296]: Connection closed by authenticating user root 217.154.69.208 port 40082 [preauth]
+2026-03-05T07:34:37.800633+00:00 sshresetvm sshd[13298]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:34:40.039719+00:00 sshresetvm sshd[13298]: Failed password for root from 217.154.69.208 port 55572 ssh2
+2026-03-05T07:34:41.199570+00:00 sshresetvm sshd[13298]: Connection closed by authenticating user root 217.154.69.208 port 55572 [preauth]
+2026-03-05T07:35:01.273030+00:00 sshresetvm CRON[13300]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:35:01.275349+00:00 sshresetvm CRON[13300]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:35:13.817791+00:00 sshresetvm sshd[13309]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=nobody
+2026-03-05T07:35:16.332788+00:00 sshresetvm sshd[13309]: Failed password for nobody from 217.154.69.208 port 44046 ssh2
+2026-03-05T07:35:18.312519+00:00 sshresetvm sshd[13309]: Connection closed by authenticating user nobody 217.154.69.208 port 44046 [preauth]
+2026-03-05T07:35:56.642923+00:00 sshresetvm sshd[13312]: Invalid user story from 178.128.165.87 port 57564
+2026-03-05T07:35:56.664831+00:00 sshresetvm sshd[13312]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:35:56.664936+00:00 sshresetvm sshd[13312]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:35:58.417199+00:00 sshresetvm sshd[13312]: Failed password for invalid user story from 178.128.165.87 port 57564 ssh2
+2026-03-05T07:35:58.808581+00:00 sshresetvm sshd[13312]: Connection closed by invalid user story 178.128.165.87 port 57564 [preauth]
+2026-03-05T07:36:10.323663+00:00 sshresetvm sshd[13314]: Invalid user kali from 217.154.69.208 port 35590
+2026-03-05T07:36:10.325789+00:00 sshresetvm sshd[13314]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:36:10.325882+00:00 sshresetvm sshd[13314]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:36:12.665516+00:00 sshresetvm sshd[13314]: Failed password for invalid user kali from 217.154.69.208 port 35590 ssh2
+2026-03-05T07:36:14.787964+00:00 sshresetvm sshd[13314]: Connection closed by invalid user kali 217.154.69.208 port 35590 [preauth]
+2026-03-05T07:36:50.380774+00:00 sshresetvm sshd[13316]: Invalid user linaro from 217.154.69.208 port 42116
+2026-03-05T07:36:50.382951+00:00 sshresetvm sshd[13316]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:36:50.383058+00:00 sshresetvm sshd[13316]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:36:52.215574+00:00 sshresetvm sshd[13316]: Failed password for invalid user linaro from 217.154.69.208 port 42116 ssh2
+2026-03-05T07:36:53.153934+00:00 sshresetvm sshd[13316]: Connection closed by invalid user linaro 217.154.69.208 port 42116 [preauth]
+2026-03-05T07:37:05.972058+00:00 sshresetvm sshd[13318]: Accepted password for vm_user from 212.125.4.212 port 44630 ssh2
+2026-03-05T07:37:05.973625+00:00 sshresetvm sshd[13318]: pam_unix(sshd:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:37:05.980203+00:00 sshresetvm systemd-logind[888]: New session 11 of user vm_user.
+2026-03-05T07:37:06.003632+00:00 sshresetvm (systemd): pam_unix(systemd-user:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:37:25.484323+00:00 sshresetvm sshd[13442]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:37:27.788389+00:00 sshresetvm sshd[13442]: Failed password for root from 217.154.69.208 port 40270 ssh2
+2026-03-05T07:37:29.078255+00:00 sshresetvm sshd[13442]: Connection closed by authenticating user root 217.154.69.208 port 40270 [preauth]
+2026-03-05T07:38:03.321725+00:00 sshresetvm sshd[13444]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:38:03.455328+00:00 sshresetvm sshd[13446]: Invalid user vpn from 178.128.165.87 port 47776
+2026-03-05T07:38:03.477191+00:00 sshresetvm sshd[13446]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:38:03.477317+00:00 sshresetvm sshd[13446]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:38:05.174399+00:00 sshresetvm sshd[13444]: Failed password for root from 217.154.69.208 port 47794 ssh2
+2026-03-05T07:38:05.330006+00:00 sshresetvm sshd[13446]: Failed password for invalid user vpn from 178.128.165.87 port 47776 ssh2
+2026-03-05T07:38:05.418945+00:00 sshresetvm sshd[13446]: Connection closed by invalid user vpn 178.128.165.87 port 47776 [preauth]
+2026-03-05T07:38:06.876345+00:00 sshresetvm sshd[13444]: Connection closed by authenticating user root 217.154.69.208 port 47794 [preauth]
+2026-03-05T07:38:08.421727+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/nano /usr/local/bin/ssh-wrapper.sh
+2026-03-05T07:38:08.422582+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:38:13.743145+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:38:28.374519+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/chmod +x /usr/local/bin/ssh-wrapper.sh
+2026-03-05T07:38:28.375098+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:38:28.377374+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:38:44.284791+00:00 sshresetvm sshd[13456]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:38:45.766051+00:00 sshresetvm sshd[13456]: Failed password for root from 217.154.69.208 port 34714 ssh2
+2026-03-05T07:38:46.114302+00:00 sshresetvm sshd[13456]: Connection closed by authenticating user root 217.154.69.208 port 34714 [preauth]
+2026-03-05T07:39:00.009620+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/chmod 755 /usr/local/bin/ssh-wrapper.sh
+2026-03-05T07:39:00.010460+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:39:00.012532+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:39:18.388067+00:00 sshresetvm sshd[13461]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:39:20.205281+00:00 sshresetvm sshd[13461]: Failed password for root from 217.154.69.208 port 47496 ssh2
+2026-03-05T07:39:21.761831+00:00 sshresetvm sshd[13461]: Connection closed by authenticating user root 217.154.69.208 port 47496 [preauth]
+2026-03-05T07:39:47.310051+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/nano /etc/ssh/sshd_config
+2026-03-05T07:39:47.310876+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:40:01.306309+00:00 sshresetvm sshd[13468]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:40:03.359507+00:00 sshresetvm sshd[13468]: Failed password for root from 217.154.69.208 port 37046 ssh2
+2026-03-05T07:40:04.486657+00:00 sshresetvm sshd[13470]: Invalid user xray from 178.128.165.87 port 42184
+2026-03-05T07:40:04.509494+00:00 sshresetvm sshd[13470]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:40:04.509591+00:00 sshresetvm sshd[13470]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:40:04.663892+00:00 sshresetvm sshd[13468]: Connection closed by authenticating user root 217.154.69.208 port 37046 [preauth]
+2026-03-05T07:40:06.306803+00:00 sshresetvm sshd[13470]: Failed password for invalid user xray from 178.128.165.87 port 42184 ssh2
+2026-03-05T07:40:07.144792+00:00 sshresetvm sshd[13470]: Connection closed by invalid user xray 178.128.165.87 port 42184 [preauth]
+2026-03-05T07:40:10.859246+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:40:18.905154+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/service sshd restart
+2026-03-05T07:40:18.905989+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:40:18.915325+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:40:30.396032+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/systemctl restart sshd
+2026-03-05T07:40:30.396804+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:40:30.403034+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:40:41.019867+00:00 sshresetvm sshd[13512]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:40:42.230121+00:00 sshresetvm sshd[13512]: Failed password for root from 217.154.69.208 port 44098 ssh2
+2026-03-05T07:40:42.715040+00:00 sshresetvm sshd[13512]: Connection closed by authenticating user root 217.154.69.208 port 44098 [preauth]
+2026-03-05T07:40:47.207463+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+2026-03-05T07:40:47.208252+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:40:47.215190+00:00 sshresetvm sshd[11784]: Received signal 15; terminating.
+2026-03-05T07:40:47.244866+00:00 sshresetvm sshd[13521]: Server listening on 0.0.0.0 port 22.
+2026-03-05T07:40:47.244999+00:00 sshresetvm sshd[13521]: Server listening on :: port 22.
+2026-03-05T07:40:47.247731+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:40:50.107669+00:00 sshresetvm sshd[13431]: Received disconnect from 212.125.4.212 port 44630:11: disconnected by user
+2026-03-05T07:40:50.107839+00:00 sshresetvm sshd[13431]: Disconnected from user vm_user 212.125.4.212 port 44630
+2026-03-05T07:40:50.108567+00:00 sshresetvm sshd[13318]: pam_unix(sshd:session): session closed for user vm_user
+2026-03-05T07:40:50.112263+00:00 sshresetvm systemd-logind[888]: Session 11 logged out. Waiting for processes to exit.
+2026-03-05T07:40:50.112963+00:00 sshresetvm systemd-logind[888]: Removed session 11.
+2026-03-05T07:40:57.062878+00:00 sshresetvm sshd[13523]: Accepted password for vm_user from 212.125.4.212 port 28315 ssh2
+2026-03-05T07:40:57.067023+00:00 sshresetvm sshd[13523]: pam_unix(sshd:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:40:57.068733+00:00 sshresetvm systemd-logind[888]: New session 13 of user vm_user.
+2026-03-05T07:41:09.368935+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/adduser test
+2026-03-05T07:41:09.369724+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:41:09.437240+00:00 sshresetvm groupadd[13599]: group added to /etc/group: name=test, GID=1001
+2026-03-05T07:41:09.446179+00:00 sshresetvm groupadd[13599]: group added to /etc/gshadow: name=test
+2026-03-05T07:41:09.447509+00:00 sshresetvm groupadd[13599]: new group: name=test, GID=1001
+2026-03-05T07:41:09.485485+00:00 sshresetvm useradd[13606]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/bash, from=/dev/pts/1
+2026-03-05T07:41:13.417111+00:00 sshresetvm passwd[13614]: pam_unix(passwd:chauthtok): new password not acceptable
+2026-03-05T07:41:15.194260+00:00 sshresetvm sshd[13615]: Invalid user admin from 217.154.69.208 port 36936
+2026-03-05T07:41:15.196477+00:00 sshresetvm sshd[13615]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:41:15.196577+00:00 sshresetvm sshd[13615]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:41:17.410209+00:00 sshresetvm sshd[13615]: Failed password for invalid user admin from 217.154.69.208 port 36936 ssh2
+2026-03-05T07:41:17.990185+00:00 sshresetvm chfn[13617]: changed user 'test' information
+2026-03-05T07:41:18.556873+00:00 sshresetvm sshd[13615]: Connection closed by invalid user admin 217.154.69.208 port 36936 [preauth]
+2026-03-05T07:41:18.692144+00:00 sshresetvm gpasswd[13625]: members of group users set by root to test
+2026-03-05T07:41:18.694520+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:41:24.899761+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/deluser test
+2026-03-05T07:41:24.900320+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:41:24.998112+00:00 sshresetvm userdel[13637]: delete user 'test'
+2026-03-05T07:41:24.998253+00:00 sshresetvm userdel[13637]: delete 'test' from group 'users'
+2026-03-05T07:41:24.998952+00:00 sshresetvm userdel[13637]: removed group 'test' owned by 'test'
+2026-03-05T07:41:24.999068+00:00 sshresetvm userdel[13637]: removed shadow group 'test' owned by 'test'
+2026-03-05T07:41:24.999158+00:00 sshresetvm userdel[13637]: delete 'test' from shadow group 'users'
+2026-03-05T07:41:25.071909+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:41:29.977642+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/useradd test
+2026-03-05T07:41:29.978412+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:41:30.013254+00:00 sshresetvm useradd[13647]: new group: name=test, GID=1001
+2026-03-05T07:41:30.013424+00:00 sshresetvm useradd[13647]: new user: name=test, UID=1001, GID=1001, home=/home/test, shell=/bin/sh, from=/dev/pts/1
+2026-03-05T07:41:30.089864+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:41:51.459413+00:00 sshresetvm sshd[13654]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:41:53.948859+00:00 sshresetvm sshd[13654]: Failed password for root from 217.154.69.208 port 46054 ssh2
+2026-03-05T07:41:54.995209+00:00 sshresetvm sshd[13654]: Connection closed by authenticating user root 217.154.69.208 port 46054 [preauth]
+2026-03-05T07:41:59.797487+00:00 sshresetvm sshd[13656]: Invalid user viper from 178.128.165.87 port 35674
+2026-03-05T07:41:59.819038+00:00 sshresetvm sshd[13656]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:41:59.819159+00:00 sshresetvm sshd[13656]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:42:01.405650+00:00 sshresetvm sshd[13656]: Failed password for invalid user viper from 178.128.165.87 port 35674 ssh2
+2026-03-05T07:42:01.617306+00:00 sshresetvm sshd[13656]: Connection closed by invalid user viper 178.128.165.87 port 35674 [preauth]
+2026-03-05T07:42:03.338407+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/usermod -s /bin/bash test
+2026-03-05T07:42:03.339215+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:42:03.351414+00:00 sshresetvm usermod[13660]: change user 'test' shell from '/bin/sh' to '/bin/bash'
+2026-03-05T07:42:03.364138+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:42:15.442226+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/nano /home/test/.bashrc
+2026-03-05T07:42:15.443038+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:42:24.899490+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:42:28.145012+00:00 sshresetvm sshd[13670]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:42:30.080932+00:00 sshresetvm sshd[13581]: Received disconnect from 212.125.4.212 port 28315:11: disconnected by user
+2026-03-05T07:42:30.081049+00:00 sshresetvm sshd[13581]: Disconnected from user vm_user 212.125.4.212 port 28315
+2026-03-05T07:42:30.081742+00:00 sshresetvm sshd[13523]: pam_unix(sshd:session): session closed for user vm_user
+2026-03-05T07:42:30.085523+00:00 sshresetvm systemd-logind[888]: Session 13 logged out. Waiting for processes to exit.
+2026-03-05T07:42:30.086110+00:00 sshresetvm systemd-logind[888]: Removed session 13.
+2026-03-05T07:42:30.378838+00:00 sshresetvm sshd[13670]: Failed password for root from 217.154.69.208 port 47566 ssh2
+2026-03-05T07:42:31.705821+00:00 sshresetvm sshd[13670]: Connection closed by authenticating user root 217.154.69.208 port 47566 [preauth]
+2026-03-05T07:42:40.251269+00:00 sshresetvm (sd-pam): pam_unix(systemd-user:session): session closed for user vm_user
+2026-03-05T07:42:44.189271+00:00 sshresetvm sshd[13673]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=212.125.4.212  user=test
+2026-03-05T07:42:46.287452+00:00 sshresetvm sshd[13673]: Failed password for test from 212.125.4.212 port 23992 ssh2
+2026-03-05T07:42:47.754431+00:00 sshresetvm sshd[13673]: Connection reset by authenticating user test 212.125.4.212 port 23992 [preauth]
+2026-03-05T07:43:00.124814+00:00 sshresetvm sshd[13684]: Accepted password for vm_user from 212.125.4.212 port 64093 ssh2
+2026-03-05T07:43:00.126317+00:00 sshresetvm sshd[13684]: pam_unix(sshd:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:43:00.140794+00:00 sshresetvm systemd-logind[888]: New session 14 of user vm_user.
+2026-03-05T07:43:00.156411+00:00 sshresetvm (systemd): pam_unix(systemd-user:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:43:04.772583+00:00 sshresetvm sshd[13764]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:43:07.282350+00:00 sshresetvm sshd[13764]: Failed password for root from 217.154.69.208 port 43130 ssh2
+2026-03-05T07:43:08.337533+00:00 sshresetvm sshd[13764]: Connection closed by authenticating user root 217.154.69.208 port 43130 [preauth]
+2026-03-05T07:43:41.195271+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/passwd test --stdin
+2026-03-05T07:43:41.196073+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:43:41.198800+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:43:47.705187+00:00 sshresetvm sshd[13770]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:43:49.116200+00:00 sshresetvm sshd[13770]: Failed password for root from 217.154.69.208 port 52932 ssh2
+2026-03-05T07:43:49.544482+00:00 sshresetvm sshd[13770]: Connection closed by authenticating user root 217.154.69.208 port 52932 [preauth]
+2026-03-05T07:43:55.855744+00:00 sshresetvm sshd[13772]: Invalid user liquidator from 178.128.165.87 port 46830
+2026-03-05T07:43:55.878586+00:00 sshresetvm sshd[13772]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:43:55.878665+00:00 sshresetvm sshd[13772]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:43:58.057226+00:00 sshresetvm sshd[13772]: Failed password for invalid user liquidator from 178.128.165.87 port 46830 ssh2
+2026-03-05T07:43:58.260998+00:00 sshresetvm sshd[13772]: Connection closed by invalid user liquidator 178.128.165.87 port 46830 [preauth]
+2026-03-05T07:44:01.983252+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/passwd test
+2026-03-05T07:44:01.984120+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:44:07.882595+00:00 sshresetvm passwd[13776]: pam_unix(passwd:chauthtok): password changed for test
+2026-03-05T07:44:07.883927+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:44:08.838256+00:00 sshresetvm sshd[13777]: Connection closed by 205.210.31.11 port 53952
+2026-03-05T07:44:09.152853+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/passwd test
+2026-03-05T07:44:09.153642+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vm_user(uid=1000)
+2026-03-05T07:44:14.238763+00:00 sshresetvm passwd[13780]: pam_unix(passwd:chauthtok): new password not acceptable
+2026-03-05T07:44:14.240184+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:44:18.115618+00:00 sshresetvm sshd[13754]: Received disconnect from 212.125.4.212 port 64093:11: disconnected by user
+2026-03-05T07:44:18.115801+00:00 sshresetvm sshd[13754]: Disconnected from user vm_user 212.125.4.212 port 64093
+2026-03-05T07:44:18.116532+00:00 sshresetvm sshd[13684]: pam_unix(sshd:session): session closed for user vm_user
+2026-03-05T07:44:18.120493+00:00 sshresetvm systemd-logind[888]: Session 14 logged out. Waiting for processes to exit.
+2026-03-05T07:44:18.121009+00:00 sshresetvm systemd-logind[888]: Removed session 14.
+2026-03-05T07:44:21.693428+00:00 sshresetvm sshd[13782]: Accepted password for test from 212.125.4.212 port 59025 ssh2
+2026-03-05T07:44:21.695036+00:00 sshresetvm sshd[13782]: pam_unix(sshd:session): session opened for user test(uid=1001) by test(uid=0)
+2026-03-05T07:44:21.709286+00:00 sshresetvm systemd-logind[888]: New session 16 of user test.
+2026-03-05T07:44:21.726058+00:00 sshresetvm (systemd): pam_unix(systemd-user:session): session opened for user test(uid=1001) by test(uid=0)
+2026-03-05T07:44:21.788075+00:00 sshresetvm sshd[13784]: Invalid user admin from 217.154.69.208 port 43520
+2026-03-05T07:44:21.790940+00:00 sshresetvm sshd[13784]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:44:21.791068+00:00 sshresetvm sshd[13784]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:44:23.869791+00:00 sshresetvm sshd[13784]: Failed password for invalid user admin from 217.154.69.208 port 43520 ssh2
+2026-03-05T07:44:25.137794+00:00 sshresetvm sshd[13784]: Connection closed by invalid user admin 217.154.69.208 port 43520 [preauth]
+2026-03-05T07:44:28.256012+00:00 sshresetvm (sd-pam): pam_unix(systemd-user:session): session closed for user vm_user
+2026-03-05T07:44:57.538557+00:00 sshresetvm sshd[13869]: Invalid user user from 217.154.69.208 port 36846
+2026-03-05T07:44:57.540730+00:00 sshresetvm sshd[13869]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:44:57.540835+00:00 sshresetvm sshd[13869]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:44:59.563886+00:00 sshresetvm sshd[13869]: Failed password for invalid user user from 217.154.69.208 port 36846 ssh2
+2026-03-05T07:45:00.179037+00:00 sshresetvm sshd[13869]: Connection closed by invalid user user 217.154.69.208 port 36846 [preauth]
+2026-03-05T07:45:01.280205+00:00 sshresetvm CRON[13871]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:45:01.282672+00:00 sshresetvm CRON[13871]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:45:30.776211+00:00 sshresetvm sudo: pam_unix(sudo:auth): authentication failure; logname=test uid=1001 euid=0 tty=/dev/pts/0 ruser=test rhost=  user=test
+2026-03-05T07:45:36.224863+00:00 sshresetvm sudo:     test : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f -n 500 /var/log/auth.log
+2026-03-05T07:45:36.563693+00:00 sshresetvm sshd[13883]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:45:38.606705+00:00 sshresetvm sshd[13883]: Failed password for root from 217.154.69.208 port 57440 ssh2
+2026-03-05T07:45:40.136258+00:00 sshresetvm sshd[13883]: Connection closed by authenticating user root 217.154.69.208 port 57440 [preauth]
+2026-03-05T07:45:52.757985+00:00 sshresetvm sshd[13887]: Invalid user liquidity from 178.128.165.87 port 45264
+2026-03-05T07:45:52.780493+00:00 sshresetvm sshd[13887]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:45:52.780621+00:00 sshresetvm sshd[13887]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:45:54.688095+00:00 sshresetvm sshd[13887]: Failed password for invalid user liquidity from 178.128.165.87 port 45264 ssh2
+2026-03-05T07:45:56.068848+00:00 sshresetvm sshd[13887]: Connection closed by invalid user liquidity 178.128.165.87 port 45264 [preauth]
+2026-03-05T07:46:08.841801+00:00 sshresetvm su[13892]: (to vm_user) test on pts/0
+2026-03-05T07:46:08.846604+00:00 sshresetvm su[13892]: pam_unix(su-l:session): session opened for user vm_user(uid=1000) by test(uid=1001)
+2026-03-05T07:46:13.223495+00:00 sshresetvm sshd[13902]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:46:14.679413+00:00 sshresetvm sshd[13902]: Failed password for root from 217.154.69.208 port 40894 ssh2
+2026-03-05T07:46:15.151483+00:00 sshresetvm sshd[13902]: Connection closed by authenticating user root 217.154.69.208 port 40894 [preauth]
+2026-03-05T07:46:20.421137+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/usermod sudo test
+2026-03-05T07:46:20.425829+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1000)
+2026-03-05T07:46:20.425917+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:46:38.702899+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/usermod -aG sudo test
+2026-03-05T07:46:38.703716+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1000)
+2026-03-05T07:46:38.726122+00:00 sshresetvm usermod[13910]: add 'test' to group 'sudo'
+2026-03-05T07:46:38.726384+00:00 sshresetvm usermod[13910]: add 'test' to shadow group 'sudo'
+2026-03-05T07:46:38.751142+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:46:40.394310+00:00 sshresetvm su[13892]: pam_unix(su-l:session): session closed for user vm_user
+2026-03-05T07:46:45.589330+00:00 sshresetvm sudo:     test : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f -n 500 /var/log/auth.log
+2026-03-05T07:46:47.702559+00:00 sshresetvm sshd[13920]: Invalid user admin from 217.154.69.208 port 58198
+2026-03-05T07:46:47.704786+00:00 sshresetvm sshd[13920]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:46:47.704858+00:00 sshresetvm sshd[13920]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:46:49.828352+00:00 sshresetvm sshd[13920]: Failed password for invalid user admin from 217.154.69.208 port 58198 ssh2
+2026-03-05T07:46:51.110293+00:00 sshresetvm sshd[13920]: Connection closed by invalid user admin 217.154.69.208 port 58198 [preauth]
+2026-03-05T07:46:56.459782+00:00 sshresetvm sudo:     test : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T07:47:03.357840+00:00 sshresetvm su[13923]: (to vm_user) test on pts/0
+2026-03-05T07:47:03.358809+00:00 sshresetvm su[13923]: pam_unix(su-l:session): session opened for user vm_user(uid=1000) by test(uid=1001)
+2026-03-05T07:47:10.967439+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T07:47:10.968284+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1000)
+2026-03-05T07:47:10.971960+00:00 sshresetvm su[13935]: (to root) root on pts/1
+2026-03-05T07:47:10.972348+00:00 sshresetvm su[13935]: pam_unix(su:session): session opened for user root(uid=0) by test(uid=0)
+2026-03-05T07:47:12.956658+00:00 sshresetvm sshd[13943]: Connection closed by 178.62.207.223 port 60034
+2026-03-05T07:47:13.579708+00:00 sshresetvm su[13935]: pam_unix(su:session): session closed for user root
+2026-03-05T07:47:13.580712+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:47:23.469128+00:00 sshresetvm sshd[13944]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:47:25.868346+00:00 sshresetvm sshd[13944]: Failed password for root from 217.154.69.208 port 33934 ssh2
+2026-03-05T07:47:27.005978+00:00 sshresetvm sshd[13944]: Connection closed by authenticating user root 217.154.69.208 port 33934 [preauth]
+2026-03-05T07:47:29.573614+00:00 sshresetvm sudo:  vm_user : TTY=pts/0 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/sbin/adduser test sudo
+2026-03-05T07:47:29.574446+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1000)
+2026-03-05T07:47:29.611516+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:47:37.906694+00:00 sshresetvm su[13950]: (to test) vm_user on pts/0
+2026-03-05T07:47:37.907634+00:00 sshresetvm su[13950]: pam_unix(su-l:session): session opened for user test(uid=1001) by test(uid=1000)
+2026-03-05T07:47:41.509502+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T07:47:41.510142+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:47:41.514013+00:00 sshresetvm su[13964]: (to root) root on pts/1
+2026-03-05T07:47:41.514404+00:00 sshresetvm su[13964]: pam_unix(su:session): session opened for user root(uid=0) by test(uid=0)
+2026-03-05T07:47:42.952409+00:00 sshresetvm su[13964]: pam_unix(su:session): session closed for user root
+2026-03-05T07:47:42.953641+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:47:43.993742+00:00 sshresetvm su[13950]: pam_unix(su-l:session): session closed for user test
+2026-03-05T07:47:45.046595+00:00 sshresetvm su[13923]: pam_unix(su-l:session): session closed for user vm_user
+2026-03-05T07:47:45.642594+00:00 sshresetvm sshd[13974]: Invalid user tfsc from 178.128.165.87 port 35282
+2026-03-05T07:47:45.662901+00:00 sshresetvm sshd[13974]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:47:45.663013+00:00 sshresetvm sshd[13974]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:47:47.377711+00:00 sshresetvm sudo:     test : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T07:47:47.415103+00:00 sshresetvm sshd[13974]: Failed password for invalid user tfsc from 178.128.165.87 port 35282 ssh2
+2026-03-05T07:47:48.714877+00:00 sshresetvm sshd[13974]: Connection closed by invalid user tfsc 178.128.165.87 port 35282 [preauth]
+2026-03-05T07:47:51.867575+00:00 sshresetvm sshd[13854]: Received disconnect from 212.125.4.212 port 59025:11: disconnected by user
+2026-03-05T07:47:51.867736+00:00 sshresetvm sshd[13854]: Disconnected from user test 212.125.4.212 port 59025
+2026-03-05T07:47:51.868407+00:00 sshresetvm sshd[13782]: pam_unix(sshd:session): session closed for user test
+2026-03-05T07:47:51.872313+00:00 sshresetvm systemd-logind[888]: Session 16 logged out. Waiting for processes to exit.
+2026-03-05T07:47:51.872867+00:00 sshresetvm systemd-logind[888]: Removed session 16.
+2026-03-05T07:47:55.039244+00:00 sshresetvm sshd[13978]: Accepted password for test from 212.125.4.212 port 17286 ssh2
+2026-03-05T07:47:55.040920+00:00 sshresetvm sshd[13978]: pam_unix(sshd:session): session opened for user test(uid=1001) by test(uid=0)
+2026-03-05T07:47:55.044915+00:00 sshresetvm systemd-logind[888]: New session 19 of user test.
+2026-03-05T07:47:59.115934+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T07:47:59.116574+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:47:59.120470+00:00 sshresetvm su[14043]: (to root) root on pts/1
+2026-03-05T07:47:59.120853+00:00 sshresetvm su[14043]: pam_unix(su:session): session opened for user root(uid=0) by test(uid=0)
+2026-03-05T07:48:00.569431+00:00 sshresetvm su[14043]: pam_unix(su:session): session closed for user root
+2026-03-05T07:48:00.570860+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:48:02.195656+00:00 sshresetvm sshd[14051]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:48:03.947673+00:00 sshresetvm sshd[14051]: Failed password for root from 217.154.69.208 port 39908 ssh2
+2026-03-05T07:48:03.949835+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/tail -f -n 500 /var/log/auth.log
+2026-03-05T07:48:03.950700+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:48:05.667282+00:00 sshresetvm sshd[14051]: Connection closed by authenticating user root 217.154.69.208 port 39908 [preauth]
+2026-03-05T07:48:37.891506+00:00 sshresetvm sshd[14057]: Invalid user postgres from 217.154.69.208 port 35196
+2026-03-05T07:48:37.893628+00:00 sshresetvm sshd[14057]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:48:37.893800+00:00 sshresetvm sshd[14057]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:48:39.786169+00:00 sshresetvm sshd[14057]: Failed password for invalid user postgres from 217.154.69.208 port 35196 ssh2
+2026-03-05T07:48:41.347048+00:00 sshresetvm sshd[14057]: Connection closed by invalid user postgres 217.154.69.208 port 35196 [preauth]
+2026-03-05T07:49:15.723305+00:00 sshresetvm sshd[14059]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:49:17.831486+00:00 sshresetvm sshd[14059]: Failed password for root from 217.154.69.208 port 37020 ssh2
+2026-03-05T07:49:19.157828+00:00 sshresetvm sshd[14059]: Connection closed by authenticating user root 217.154.69.208 port 37020 [preauth]
+2026-03-05T07:49:42.933897+00:00 sshresetvm sshd[14061]: Invalid user tfsc from 178.128.165.87 port 43002
+2026-03-05T07:49:42.955887+00:00 sshresetvm sshd[14061]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:49:42.956037+00:00 sshresetvm sshd[14061]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:49:44.532594+00:00 sshresetvm sshd[14065]: Invalid user admin from 35.189.255.16 port 27504
+2026-03-05T07:49:44.550384+00:00 sshresetvm sshd[14065]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:49:44.550521+00:00 sshresetvm sshd[14065]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=35.189.255.16 
+2026-03-05T07:49:45.104418+00:00 sshresetvm sshd[14061]: Failed password for invalid user tfsc from 178.128.165.87 port 43002 ssh2
+2026-03-05T07:49:46.009592+00:00 sshresetvm sshd[14061]: Connection closed by invalid user tfsc 178.128.165.87 port 43002 [preauth]
+2026-03-05T07:49:46.974736+00:00 sshresetvm sshd[14065]: Failed password for invalid user admin from 35.189.255.16 port 27504 ssh2
+2026-03-05T07:49:47.602873+00:00 sshresetvm sshd[14065]: Connection closed by invalid user admin 35.189.255.16 port 27504 [preauth]
+2026-03-05T07:49:49.996254+00:00 sshresetvm sshd[14063]: Connection closed by 35.189.255.16 port 27488 [preauth]
+2026-03-05T07:49:51.751410+00:00 sshresetvm sshd[14067]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:49:53.799753+00:00 sshresetvm sshd[14067]: Failed password for root from 217.154.69.208 port 40902 ssh2
+2026-03-05T07:49:54.413207+00:00 sshresetvm sshd[14069]: Invalid user cisco from 178.62.207.223 port 49036
+2026-03-05T07:49:54.433536+00:00 sshresetvm sshd[14069]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:49:54.433708+00:00 sshresetvm sshd[14069]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.62.207.223 
+2026-03-05T07:49:55.251650+00:00 sshresetvm sshd[14067]: Connection closed by authenticating user root 217.154.69.208 port 40902 [preauth]
+2026-03-05T07:49:56.562138+00:00 sshresetvm sshd[14069]: Failed password for invalid user cisco from 178.62.207.223 port 49036 ssh2
+2026-03-05T07:49:58.127457+00:00 sshresetvm sshd[14069]: Connection closed by invalid user cisco 178.62.207.223 port 49036 [preauth]
+2026-03-05T07:50:27.578267+00:00 sshresetvm sshd[14077]: Invalid user openhabian from 217.154.69.208 port 38206
+2026-03-05T07:50:27.580399+00:00 sshresetvm sshd[14077]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:50:27.580578+00:00 sshresetvm sshd[14077]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:50:29.573450+00:00 sshresetvm sshd[14077]: Failed password for invalid user openhabian from 217.154.69.208 port 38206 ssh2
+2026-03-05T07:50:29.753056+00:00 sshresetvm sshd[14077]: Connection closed by invalid user openhabian 217.154.69.208 port 38206 [preauth]
+2026-03-05T07:51:04.087917+00:00 sshresetvm sshd[14079]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:51:06.492389+00:00 sshresetvm sshd[14079]: Failed password for root from 217.154.69.208 port 34102 ssh2
+2026-03-05T07:51:07.672036+00:00 sshresetvm sshd[14079]: Connection closed by authenticating user root 217.154.69.208 port 34102 [preauth]
+2026-03-05T07:51:39.937928+00:00 sshresetvm sshd[14084]: Invalid user sshadmin from 217.154.69.208 port 40424
+2026-03-05T07:51:39.944733+00:00 sshresetvm sshd[14084]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:51:39.944810+00:00 sshresetvm sshd[14084]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:51:42.149183+00:00 sshresetvm sshd[14084]: Failed password for invalid user sshadmin from 217.154.69.208 port 40424 ssh2
+2026-03-05T07:51:43.338679+00:00 sshresetvm sshd[14084]: Connection closed by invalid user sshadmin 217.154.69.208 port 40424 [preauth]
+2026-03-05T07:51:43.606569+00:00 sshresetvm sshd[14086]: Invalid user network3 from 178.128.165.87 port 38420
+2026-03-05T07:51:43.629160+00:00 sshresetvm sshd[14086]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:51:43.629331+00:00 sshresetvm sshd[14086]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:51:45.055225+00:00 sshresetvm sshd[14086]: Failed password for invalid user network3 from 178.128.165.87 port 38420 ssh2
+2026-03-05T07:51:45.570028+00:00 sshresetvm sshd[14086]: Connection closed by invalid user network3 178.128.165.87 port 38420 [preauth]
+2026-03-05T07:52:07.407976+00:00 sshresetvm sshd[14088]: Invalid user cisco from 178.62.207.223 port 34976
+2026-03-05T07:52:07.428019+00:00 sshresetvm sshd[14088]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:52:07.428110+00:00 sshresetvm sshd[14088]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.62.207.223 
+2026-03-05T07:52:09.149924+00:00 sshresetvm sshd[14088]: Failed password for invalid user cisco from 178.62.207.223 port 34976 ssh2
+2026-03-05T07:52:09.290532+00:00 sshresetvm sshd[14088]: Connection closed by invalid user cisco 178.62.207.223 port 34976 [preauth]
+2026-03-05T07:52:15.643103+00:00 sshresetvm sshd[14090]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208  user=root
+2026-03-05T07:52:18.127836+00:00 sshresetvm sshd[14090]: Failed password for root from 217.154.69.208 port 37314 ssh2
+2026-03-05T07:52:19.188045+00:00 sshresetvm sshd[14090]: Connection closed by authenticating user root 217.154.69.208 port 37314 [preauth]
+2026-03-05T07:52:56.296270+00:00 sshresetvm sshd[14092]: Invalid user frappe from 217.154.69.208 port 55838
+2026-03-05T07:52:56.298457+00:00 sshresetvm sshd[14092]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:52:56.298615+00:00 sshresetvm sshd[14092]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.154.69.208 
+2026-03-05T07:52:57.744729+00:00 sshresetvm sshd[14092]: Failed password for invalid user frappe from 217.154.69.208 port 55838 ssh2
+2026-03-05T07:52:58.212398+00:00 sshresetvm sshd[14092]: Connection closed by invalid user frappe 217.154.69.208 port 55838 [preauth]
+2026-03-05T07:53:41.627413+00:00 sshresetvm sshd[14094]: Invalid user network3 from 178.128.165.87 port 48950
+2026-03-05T07:53:41.650341+00:00 sshresetvm sshd[14094]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:53:41.650482+00:00 sshresetvm sshd[14094]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:53:43.608397+00:00 sshresetvm sshd[14094]: Failed password for invalid user network3 from 178.128.165.87 port 48950 ssh2
+2026-03-05T07:53:45.511521+00:00 sshresetvm sshd[14094]: Connection closed by invalid user network3 178.128.165.87 port 48950 [preauth]
+2026-03-05T07:54:10.383726+00:00 sshresetvm sshd[14096]: Invalid user admin from 178.62.207.223 port 36748
+2026-03-05T07:54:10.404296+00:00 sshresetvm sshd[14096]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:54:10.404503+00:00 sshresetvm sshd[14096]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.62.207.223 
+2026-03-05T07:54:12.678243+00:00 sshresetvm sshd[14096]: Failed password for invalid user admin from 178.62.207.223 port 36748 ssh2
+2026-03-05T07:54:13.451461+00:00 sshresetvm sshd[14096]: Connection closed by invalid user admin 178.62.207.223 port 36748 [preauth]
+2026-03-05T07:55:01.287427+00:00 sshresetvm CRON[14098]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T07:55:01.289797+00:00 sshresetvm CRON[14098]: pam_unix(cron:session): session closed for user root
+2026-03-05T07:55:41.552965+00:00 sshresetvm sshd[14106]: Invalid user optimism from 178.128.165.87 port 60586
+2026-03-05T07:55:41.573469+00:00 sshresetvm sshd[14106]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:55:41.573632+00:00 sshresetvm sshd[14106]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:55:43.671814+00:00 sshresetvm sshd[14106]: Failed password for invalid user optimism from 178.128.165.87 port 60586 ssh2
+2026-03-05T07:55:43.882877+00:00 sshresetvm sshd[14106]: Connection closed by invalid user optimism 178.128.165.87 port 60586 [preauth]
+2026-03-05T07:56:17.932133+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:56:28.256054+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-03-05T07:56:28.256956+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:56:28.259760+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:56:38.950684+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-03-05T07:56:38.951490+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:56:38.953663+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:56:56.634712+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-03-05T07:56:56.639232+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:56:56.640096+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:57:16.185997+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log .
+2026-03-05T07:57:16.187454+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:57:16.189977+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:57:28.718863+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/chmod 666 auth.log
+2026-03-05T07:57:28.719883+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:57:28.722127+00:00 sshresetvm sudo: pam_unix(sudo:session): session closed for user root
+2026-03-05T07:57:45.236127+00:00 sshresetvm sshd[14182]: Invalid user gnome from 178.128.165.87 port 60210
+2026-03-05T07:57:45.258610+00:00 sshresetvm sshd[14182]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:57:45.258737+00:00 sshresetvm sshd[14182]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:57:47.713443+00:00 sshresetvm sshd[14182]: Failed password for invalid user gnome from 178.128.165.87 port 60210 ssh2
+2026-03-05T07:57:49.296302+00:00 sshresetvm sshd[14182]: Connection closed by invalid user gnome 178.128.165.87 port 60210 [preauth]
+2026-03-05T07:58:15.654889+00:00 sshresetvm sudo:     test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su
+2026-03-05T07:58:15.655717+00:00 sshresetvm sudo: pam_unix(sudo:session): session opened for user root(uid=0) by test(uid=1001)
+2026-03-05T07:58:15.659628+00:00 sshresetvm su[14186]: (to root) root on pts/1
+2026-03-05T07:58:15.660012+00:00 sshresetvm su[14186]: pam_unix(su:session): session opened for user root(uid=0) by test(uid=0)
+2026-03-05T07:58:27.357630+00:00 sshresetvm su[14195]: (to vm_user) root on pts/1
+2026-03-05T07:58:27.358532+00:00 sshresetvm su[14195]: pam_unix(su:session): session opened for user vm_user(uid=1000) by test(uid=0)
+2026-03-05T07:59:02.037482+00:00 sshresetvm sshd[14204]: Accepted password for vm_user from 212.125.4.212 port 16999 ssh2
+2026-03-05T07:59:02.039053+00:00 sshresetvm sshd[14204]: pam_unix(sshd:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:59:02.054205+00:00 sshresetvm systemd-logind[888]: New session 21 of user vm_user.
+2026-03-05T07:59:02.070673+00:00 sshresetvm (systemd): pam_unix(systemd-user:session): session opened for user vm_user(uid=1000) by vm_user(uid=0)
+2026-03-05T07:59:03.235580+00:00 sshresetvm sshd[14275]: Received disconnect from 212.125.4.212 port 16999:11: disconnected by user
+2026-03-05T07:59:03.235727+00:00 sshresetvm sshd[14275]: Disconnected from user vm_user 212.125.4.212 port 16999
+2026-03-05T07:59:03.236416+00:00 sshresetvm sshd[14204]: pam_unix(sshd:session): session closed for user vm_user
+2026-03-05T07:59:03.240613+00:00 sshresetvm systemd-logind[888]: Session 21 logged out. Waiting for processes to exit.
+2026-03-05T07:59:03.241379+00:00 sshresetvm systemd-logind[888]: Removed session 21.
+2026-03-05T07:59:13.509133+00:00 sshresetvm (sd-pam): pam_unix(systemd-user:session): session closed for user vm_user
+2026-03-05T07:59:38.446472+00:00 sshresetvm sshd[14286]: Invalid user aleonode from 178.128.165.87 port 52120
+2026-03-05T07:59:38.469046+00:00 sshresetvm sshd[14286]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T07:59:38.469127+00:00 sshresetvm sshd[14286]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T07:59:40.437028+00:00 sshresetvm sshd[14286]: Failed password for invalid user aleonode from 178.128.165.87 port 52120 ssh2
+2026-03-05T07:59:40.777927+00:00 sshresetvm sshd[14286]: Connection closed by invalid user aleonode 178.128.165.87 port 52120 [preauth]
+2026-03-05T08:00:12.644751+00:00 sshresetvm sshd[14292]: Connection closed by 80.94.92.168 port 43732
+2026-03-05T08:01:32.852074+00:00 sshresetvm sshd[14295]: Invalid user grafana from 178.128.165.87 port 48784
+2026-03-05T08:01:32.874663+00:00 sshresetvm sshd[14295]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:01:32.874738+00:00 sshresetvm sshd[14295]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:01:34.491564+00:00 sshresetvm sshd[14295]: Failed password for invalid user grafana from 178.128.165.87 port 48784 ssh2
+2026-03-05T08:01:35.113907+00:00 sshresetvm sshd[14295]: Connection closed by invalid user grafana 178.128.165.87 port 48784 [preauth]
+2026-03-05T08:01:35.299995+00:00 sshresetvm sshd[14297]: Connection closed by 157.245.193.43 port 42694
+2026-03-05T08:03:32.059094+00:00 sshresetvm sshd[14304]: Invalid user snarkOS from 178.128.165.87 port 51422
+2026-03-05T08:03:32.080784+00:00 sshresetvm sshd[14304]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:03:32.080934+00:00 sshresetvm sshd[14304]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:03:34.174047+00:00 sshresetvm sshd[14304]: Failed password for invalid user snarkOS from 178.128.165.87 port 51422 ssh2
+2026-03-05T08:03:34.883274+00:00 sshresetvm sshd[14304]: Connection closed by invalid user snarkOS 178.128.165.87 port 51422 [preauth]
+2026-03-05T08:05:01.294729+00:00 sshresetvm CRON[14306]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T08:05:01.297056+00:00 sshresetvm CRON[14306]: pam_unix(cron:session): session closed for user root
+2026-03-05T08:05:12.879645+00:00 sshresetvm sshd[14314]: Invalid user ubuntu from 157.245.193.43 port 41838
+2026-03-05T08:05:13.030598+00:00 sshresetvm sshd[14314]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:05:13.030783+00:00 sshresetvm sshd[14314]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=157.245.193.43 
+2026-03-05T08:05:14.321156+00:00 sshresetvm sshd[14314]: Failed password for invalid user ubuntu from 157.245.193.43 port 41838 ssh2
+2026-03-05T08:05:15.062149+00:00 sshresetvm sshd[14314]: Connection closed by invalid user ubuntu 157.245.193.43 port 41838 [preauth]
+2026-03-05T08:05:26.893761+00:00 sshresetvm sshd[14316]: Invalid user snark from 178.128.165.87 port 56092
+2026-03-05T08:05:26.914119+00:00 sshresetvm sshd[14316]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:05:26.914240+00:00 sshresetvm sshd[14316]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:05:28.656278+00:00 sshresetvm sshd[14316]: Failed password for invalid user snark from 178.128.165.87 port 56092 ssh2
+2026-03-05T08:05:29.797645+00:00 sshresetvm sshd[14316]: Connection closed by invalid user snark 178.128.165.87 port 56092 [preauth]
+2026-03-05T08:07:02.918140+00:00 sshresetvm sshd[14318]: Invalid user solana from 80.94.92.168 port 47500
+2026-03-05T08:07:02.978076+00:00 sshresetvm sshd[14318]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:07:02.978239+00:00 sshresetvm sshd[14318]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=80.94.92.168 
+2026-03-05T08:07:04.564824+00:00 sshresetvm sshd[14318]: Failed password for invalid user solana from 80.94.92.168 port 47500 ssh2
+2026-03-05T08:07:05.174020+00:00 sshresetvm sshd[14318]: Connection closed by invalid user solana 80.94.92.168 port 47500 [preauth]
+2026-03-05T08:07:20.919464+00:00 sshresetvm sshd[14320]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87  user=sync
+2026-03-05T08:07:22.646075+00:00 sshresetvm sshd[14320]: Failed password for sync from 178.128.165.87 port 47952 ssh2
+2026-03-05T08:07:23.845297+00:00 sshresetvm sshd[14320]: Connection closed by authenticating user sync 178.128.165.87 port 47952 [preauth]
+2026-03-05T08:07:51.241713+00:00 sshresetvm sshd[14323]: Invalid user sol from 157.245.193.43 port 49130
+2026-03-05T08:07:51.391441+00:00 sshresetvm sshd[14323]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:07:51.391587+00:00 sshresetvm sshd[14323]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=157.245.193.43 
+2026-03-05T08:07:53.038531+00:00 sshresetvm sshd[14323]: Failed password for invalid user sol from 157.245.193.43 port 49130 ssh2
+2026-03-05T08:07:54.599068+00:00 sshresetvm sshd[14323]: Connection closed by invalid user sol 157.245.193.43 port 49130 [preauth]
+2026-03-05T08:09:26.758259+00:00 sshresetvm sshd[14325]: Invalid user snarkos from 178.128.165.87 port 44290
+2026-03-05T08:09:26.780981+00:00 sshresetvm sshd[14325]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:09:26.781091+00:00 sshresetvm sshd[14325]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:09:28.804155+00:00 sshresetvm sshd[14325]: Failed password for invalid user snarkos from 178.128.165.87 port 44290 ssh2
+2026-03-05T08:09:28.975459+00:00 sshresetvm sshd[14325]: Connection closed by invalid user snarkos 178.128.165.87 port 44290 [preauth]
+2026-03-05T08:11:32.927544+00:00 sshresetvm sshd[14334]: Invalid user snarkOS from 178.128.165.87 port 36750
+2026-03-05T08:11:32.950024+00:00 sshresetvm sshd[14334]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:11:32.950131+00:00 sshresetvm sshd[14334]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:11:35.269451+00:00 sshresetvm sshd[14334]: Failed password for invalid user snarkOS from 178.128.165.87 port 36750 ssh2
+2026-03-05T08:11:35.754477+00:00 sshresetvm sshd[14334]: Connection closed by invalid user snarkOS 178.128.165.87 port 36750 [preauth]
+2026-03-05T08:13:32.895555+00:00 sshresetvm sshd[14338]: Invalid user snarkOS from 178.128.165.87 port 44018
+2026-03-05T08:13:32.917010+00:00 sshresetvm sshd[14338]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:13:32.917132+00:00 sshresetvm sshd[14338]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:13:34.709647+00:00 sshresetvm sshd[14338]: Failed password for invalid user snarkOS from 178.128.165.87 port 44018 ssh2
+2026-03-05T08:13:35.720661+00:00 sshresetvm sshd[14338]: Connection closed by invalid user snarkOS 178.128.165.87 port 44018 [preauth]
+2026-03-05T08:15:01.301976+00:00 sshresetvm CRON[14340]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T08:15:01.304516+00:00 sshresetvm CRON[14340]: pam_unix(cron:session): session closed for user root
+2026-03-05T08:15:35.038519+00:00 sshresetvm sshd[14348]: Invalid user validator from 178.128.165.87 port 55480
+2026-03-05T08:15:35.059133+00:00 sshresetvm sshd[14348]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:15:35.059298+00:00 sshresetvm sshd[14348]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:15:37.072332+00:00 sshresetvm sshd[14348]: Failed password for invalid user validator from 178.128.165.87 port 55480 ssh2
+2026-03-05T08:15:38.776192+00:00 sshresetvm sshd[14348]: Connection closed by invalid user validator 178.128.165.87 port 55480 [preauth]
+2026-03-05T08:17:01.308216+00:00 sshresetvm CRON[14350]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T08:17:01.310573+00:00 sshresetvm CRON[14350]: pam_unix(cron:session): session closed for user root
+2026-03-05T08:17:34.311792+00:00 sshresetvm sshd[14353]: Invalid user validator from 178.128.165.87 port 56002
+2026-03-05T08:17:34.334686+00:00 sshresetvm sshd[14353]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:17:34.334792+00:00 sshresetvm sshd[14353]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:17:36.684161+00:00 sshresetvm sshd[14353]: Failed password for invalid user validator from 178.128.165.87 port 56002 ssh2
+2026-03-05T08:17:38.053939+00:00 sshresetvm sshd[14353]: Connection closed by invalid user validator 178.128.165.87 port 56002 [preauth]
+2026-03-05T08:19:26.047697+00:00 sshresetvm sshd[14356]: Invalid user node from 178.128.165.87 port 40980
+2026-03-05T08:19:26.070673+00:00 sshresetvm sshd[14356]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:19:26.070815+00:00 sshresetvm sshd[14356]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:19:27.461751+00:00 sshresetvm sshd[14356]: Failed password for invalid user node from 178.128.165.87 port 40980 ssh2
+2026-03-05T08:19:28.254514+00:00 sshresetvm sshd[14356]: Connection closed by invalid user node 178.128.165.87 port 40980 [preauth]
+2026-03-05T08:21:22.473161+00:00 sshresetvm sshd[14367]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87  user=root
+2026-03-05T08:21:24.455989+00:00 sshresetvm sshd[14367]: Failed password for root from 178.128.165.87 port 55598 ssh2
+2026-03-05T08:21:25.804685+00:00 sshresetvm sshd[14367]: Connection closed by authenticating user root 178.128.165.87 port 55598 [preauth]
+2026-03-05T08:21:31.114053+00:00 sshresetvm sshd[14369]: Connection closed by 159.223.45.78 port 56550
+2026-03-05T08:23:23.495457+00:00 sshresetvm sshd[14370]: Invalid user user from 178.128.165.87 port 59516
+2026-03-05T08:23:23.516528+00:00 sshresetvm sshd[14370]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:23:23.516641+00:00 sshresetvm sshd[14370]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:23:25.780221+00:00 sshresetvm sshd[14370]: Failed password for invalid user user from 178.128.165.87 port 59516 ssh2
+2026-03-05T08:23:25.857347+00:00 sshresetvm sshd[14370]: Connection closed by invalid user user 178.128.165.87 port 59516 [preauth]
+2026-03-05T08:25:01.315174+00:00 sshresetvm CRON[14388]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T08:25:01.317549+00:00 sshresetvm CRON[14388]: pam_unix(cron:session): session closed for user root
+2026-03-05T08:25:15.898612+00:00 sshresetvm sshd[14396]: Invalid user ubuntu from 159.223.45.78 port 59166
+2026-03-05T08:25:16.071259+00:00 sshresetvm sshd[14396]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:25:16.071400+00:00 sshresetvm sshd[14396]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=159.223.45.78 
+2026-03-05T08:25:18.179609+00:00 sshresetvm sshd[14396]: Failed password for invalid user ubuntu from 159.223.45.78 port 59166 ssh2
+2026-03-05T08:25:20.005334+00:00 sshresetvm sshd[14396]: Connection closed by invalid user ubuntu 159.223.45.78 port 59166 [preauth]
+2026-03-05T08:25:24.561068+00:00 sshresetvm sshd[14398]: Invalid user ubuntu from 178.128.165.87 port 52500
+2026-03-05T08:25:24.584060+00:00 sshresetvm sshd[14398]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:25:24.584158+00:00 sshresetvm sshd[14398]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:25:26.125227+00:00 sshresetvm sshd[14398]: Failed password for invalid user ubuntu from 178.128.165.87 port 52500 ssh2
+2026-03-05T08:25:26.486662+00:00 sshresetvm sshd[14398]: Connection closed by invalid user ubuntu 178.128.165.87 port 52500 [preauth]
+2026-03-05T08:27:28.016110+00:00 sshresetvm sshd[14401]: Invalid user debian from 178.128.165.87 port 42552
+2026-03-05T08:27:28.037100+00:00 sshresetvm sshd[14401]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:27:28.037210+00:00 sshresetvm sshd[14401]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:27:30.601862+00:00 sshresetvm sshd[14401]: Failed password for invalid user debian from 178.128.165.87 port 42552 ssh2
+2026-03-05T08:27:31.244852+00:00 sshresetvm sshd[14401]: Connection closed by invalid user debian 178.128.165.87 port 42552 [preauth]
+2026-03-05T08:27:59.668704+00:00 sshresetvm sshd[14403]: Invalid user solana from 159.223.45.78 port 46352
+2026-03-05T08:27:59.830942+00:00 sshresetvm sshd[14403]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:27:59.831074+00:00 sshresetvm sshd[14403]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=159.223.45.78 
+2026-03-05T08:28:01.984274+00:00 sshresetvm sshd[14403]: Failed password for invalid user solana from 159.223.45.78 port 46352 ssh2
+2026-03-05T08:28:04.010880+00:00 sshresetvm sshd[14403]: Connection closed by invalid user solana 159.223.45.78 port 46352 [preauth]
+2026-03-05T08:29:34.393914+00:00 sshresetvm sshd[14406]: Invalid user polkadot from 178.128.165.87 port 38890
+2026-03-05T08:29:34.416028+00:00 sshresetvm sshd[14406]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:29:34.416134+00:00 sshresetvm sshd[14406]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:29:36.278187+00:00 sshresetvm sshd[14406]: Failed password for invalid user polkadot from 178.128.165.87 port 38890 ssh2
+2026-03-05T08:29:37.812275+00:00 sshresetvm sshd[14406]: Connection closed by invalid user polkadot 178.128.165.87 port 38890 [preauth]
+2026-03-05T08:31:31.389998+00:00 sshresetvm sshd[14421]: Invalid user taiko from 178.128.165.87 port 39022
+2026-03-05T08:31:31.412172+00:00 sshresetvm sshd[14421]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:31:31.412309+00:00 sshresetvm sshd[14421]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:31:33.334789+00:00 sshresetvm sshd[14421]: Failed password for invalid user taiko from 178.128.165.87 port 39022 ssh2
+2026-03-05T08:31:33.424912+00:00 sshresetvm sshd[14421]: Connection closed by invalid user taiko 178.128.165.87 port 39022 [preauth]
+2026-03-05T08:33:25.449388+00:00 sshresetvm sshd[14424]: Invalid user shardeum from 178.128.165.87 port 54276
+2026-03-05T08:33:25.470258+00:00 sshresetvm sshd[14424]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:33:25.470348+00:00 sshresetvm sshd[14424]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:33:27.040729+00:00 sshresetvm sshd[14424]: Failed password for invalid user shardeum from 178.128.165.87 port 54276 ssh2
+2026-03-05T08:33:28.352260+00:00 sshresetvm sshd[14424]: Connection closed by invalid user shardeum 178.128.165.87 port 54276 [preauth]
+2026-03-05T08:35:01.322453+00:00 sshresetvm CRON[14427]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T08:35:01.326730+00:00 sshresetvm CRON[14427]: pam_unix(cron:session): session closed for user root
+2026-03-05T08:35:25.945895+00:00 sshresetvm sshd[14436]: Invalid user ethdocker from 178.128.165.87 port 47146
+2026-03-05T08:35:25.968322+00:00 sshresetvm sshd[14436]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:35:25.968489+00:00 sshresetvm sshd[14436]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:35:27.680484+00:00 sshresetvm sshd[14436]: Failed password for invalid user ethdocker from 178.128.165.87 port 47146 ssh2
+2026-03-05T08:35:29.101443+00:00 sshresetvm sshd[14436]: Connection closed by invalid user ethdocker 178.128.165.87 port 47146 [preauth]
+2026-03-05T08:36:27.365507+00:00 sshresetvm sshd[14438]: Invalid user  from 165.232.68.252 port 37750
+2026-03-05T08:36:27.476952+00:00 sshresetvm sshd[14438]: Connection closed by invalid user  165.232.68.252 port 37750 [preauth]
+2026-03-05T08:37:22.471942+00:00 sshresetvm sshd[14440]: Invalid user taikonode from 178.128.165.87 port 54510
+2026-03-05T08:37:22.494345+00:00 sshresetvm sshd[14440]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:37:22.494473+00:00 sshresetvm sshd[14440]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:37:24.271228+00:00 sshresetvm sshd[14440]: Failed password for invalid user taikonode from 178.128.165.87 port 54510 ssh2
+2026-03-05T08:37:25.828669+00:00 sshresetvm sshd[14440]: Connection closed by invalid user taikonode 178.128.165.87 port 54510 [preauth]
+2026-03-05T08:39:18.603793+00:00 sshresetvm sshd[14442]: Invalid user taiko from 178.128.165.87 port 46278
+2026-03-05T08:39:18.626274+00:00 sshresetvm sshd[14442]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:39:18.626418+00:00 sshresetvm sshd[14442]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:39:20.659346+00:00 sshresetvm sshd[14442]: Failed password for invalid user taiko from 178.128.165.87 port 46278 ssh2
+2026-03-05T08:39:22.631507+00:00 sshresetvm sshd[14442]: Connection closed by invalid user taiko 178.128.165.87 port 46278 [preauth]
+2026-03-05T08:41:25.051421+00:00 sshresetvm sshd[14475]: Invalid user validator from 178.128.165.87 port 32940
+2026-03-05T08:41:25.074054+00:00 sshresetvm sshd[14475]: pam_unix(sshd:auth): check pass; user unknown
+2026-03-05T08:41:25.074192+00:00 sshresetvm sshd[14475]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87 
+2026-03-05T08:41:26.876140+00:00 sshresetvm sshd[14475]: Failed password for invalid user validator from 178.128.165.87 port 32940 ssh2
+2026-03-05T08:41:26.944090+00:00 sshresetvm sshd[14475]: Connection closed by invalid user validator 178.128.165.87 port 32940 [preauth]
+2026-03-05T08:43:29.591518+00:00 sshresetvm sshd[14477]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87  user=root
+2026-03-05T08:43:31.749623+00:00 sshresetvm sshd[14477]: Failed password for root from 178.128.165.87 port 51110 ssh2
+2026-03-05T08:43:32.921929+00:00 sshresetvm sshd[14477]: Connection closed by authenticating user root 178.128.165.87 port 51110 [preauth]
+2026-03-05T08:45:01.329495+00:00 sshresetvm CRON[14479]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-05T08:45:01.331841+00:00 sshresetvm CRON[14479]: pam_unix(cron:session): session closed for user root
+2026-03-05T08:45:29.376930+00:00 sshresetvm sshd[14491]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=178.128.165.87  user=root
+2026-03-05T08:45:31.675590+00:00 sshresetvm sshd[14491]: Failed password for root from 178.128.165.87 port 58952 ssh2
+2026-03-05T08:45:32.354126+00:00 sshresetvm sudo:  vm_user : TTY=pts/1 ; PWD=/home/vm_user ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log .
