@@ -7,6 +7,62 @@ This project analyzes **SSH authentication logs** to detect **brute-force attack
 The goal is to understand how malicious login behavior differs from normal SSH traffic and build an automated system capable of detecting attacks in real time.
 
 ---
+## Setup and Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/AdityaMitra5102/ML-TimeSeries.git
+cd ML-TimeSeries
+```
+
+Install required Python libraries:
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+## Running the Project
+
+### Convert SSH logs to dataset
+
+```
+python convert.py
+```
+
+This converts `auth.log` into a structured dataset `log.csv`.
+
+---
+
+### Run statistical analysis
+
+Open the notebook:
+
+```
+statistical_analysis.ipynb
+```
+
+This notebook performs time-series and signal analysis of SSH traffic.
+
+---
+
+### Train the detection models
+
+Open:
+
+```
+ssh_bruteforce_detector.ipynb
+```
+
+This notebook:
+
+* performs feature engineering
+* trains machine learning models
+* evaluates detection performance
+
+---
 
 ## Project Motivation
 
