@@ -45,6 +45,7 @@ def convert_csv(file, outfile):
 							log['status']='success'
 						if 'Failed' in log['event_type'] or 'Invalid' in log['event_type']:
 							log['status']='auth_fail'
+							log['event_type']='Failed password'
 						if 'status' not in log:
 							log['status']='other'
 						
@@ -55,4 +56,5 @@ def convert_csv(file, outfile):
 					
 	pd.DataFrame(rows).assign(timestamp=lambda df: pd.to_datetime(df['timestamp'])).to_csv(outfile, index=False)					
 					
+
 convert_csv(file, outfile)
