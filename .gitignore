@@ -13,5 +13,5 @@ __pycache__/
 .env.*
 *.local
 
-models/
-*.pkl
+# models/
+# *.pkl
