@@ -19,7 +19,8 @@ def extract_user(message):
 def convert_csv(file, outfile):
 	with open(file, 'r') as fl1:
 		lines=fl1.readlines()
-		df=convert_lines(lines)
+		rows=convert_lines(lines)
+		df=pd.DataFrame(rows).assign(timestamp=lambda df: pd.to_datetime(df['timestamp']))
 		df.to_csv(outfile, index=False)					
 
 def convert_lines(lines):
@@ -53,12 +54,9 @@ def convert_lines(lines):
 				if 'status' not in log:
 					log['status']='other'		
 				if log['status'] != 'other':
-					#print(log)
 					rows.append(log)
 						
-					
-	df=pd.DataFrame(rows).assign(timestamp=lambda df: pd.to_datetime(df['timestamp']))
-	return df
+	return rows
 					
 if __name__=='__main__':
 	convert_csv(file, outfile)
